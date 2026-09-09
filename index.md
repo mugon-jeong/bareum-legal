@@ -10,3 +10,4 @@ title: 바름(BAREUM)
 
 - [개인정보처리방침](/privacy/)
 - [이용약관](/terms/)
+- [고객지원](/support/)
