@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "wrangler": "^4.136.3"
+  },
+  "name": "bareum-legal",
+  "private": true,
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "build": "bundle exec jekyll build --config _config.yml,_config.cloudflare.yml",
+    "dev": "wrangler dev",
+    "deploy:check": "pnpm build && wrangler deploy --dry-run",
+    "deploy": "pnpm build && wrangler deploy"
+  }
+}
