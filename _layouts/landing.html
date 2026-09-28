@@ -16,7 +16,7 @@
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
   <header class="site-header">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="바름 홈"><img src="{{ '/assets/images/app-icon.webp' | relative_url }}" width="34" height="34" alt=""><span>바름</span></a>
-    <nav aria-label="주요 기능"><a href="#routine">순서</a><a href="#relations">성분 시각화</a><a href="#everywhere">어디서나</a></nav>
+    <nav aria-label="주요 기능"><a href="#routine">순서</a><a href="#ingredients">성분 시각화</a><a href="#everywhere">어디서나</a></nav>
     {% if site.app_store_url and site.app_store_url != '' %}<a class="header-link" href="{{ site.app_store_url | escape }}">다운로드 <span aria-hidden="true">↗</span></a>{% else %}<span class="header-status">iOS · watchOS</span>{% endif %}
   </header>
   <main id="main">
@@ -24,15 +24,15 @@
       <div class="hero-copy">
         <p class="eyebrow">매일 바르는 일에, 바름.</p>
         <h1 id="hero-title">가진 화장품,<br>바르는 <span>순서부터.</span></h1>
-        <p class="hero-description">순서부터 성분의 관계와 이동까지.<br>iPhone과 Apple Watch로 이어가는 나의 루틴.</p>
+        <p class="hero-description">순서부터 내 선반의 성분 구성까지.<br>iPhone과 Apple Watch로 이어가는 나의 루틴.</p>
         <div class="hero-actions">
           {% if site.app_store_url and site.app_store_url != '' %}<a class="button primary" href="{{ site.app_store_url | escape }}">App Store에서 다운로드 <span aria-hidden="true">↗</span></a>{% else %}<span class="launch-status">App Store 출시 예정</span>{% endif %}
           <a class="text-link" href="#routine">바름 알아보기 <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-      <div class="hero-stage" role="group" aria-label="바름의 오늘 순서, 성분 관계 그래프와 Apple Watch 앱">
+      <div class="hero-stage" role="group" aria-label="바름의 오늘 순서, 내 선반과 Apple Watch 앱">
         <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
-        <figure class="phone hero-phone-back"><img src="{{ '/assets/images/graph.webp' | relative_url }}" width="804" height="1748" alt="성분의 관계와 연구 참고 연결을 보여주는 그래프" decoding="async"></figure>
+        <figure class="phone hero-phone-back"><img src="{{ '/assets/images/shelf.webp' | relative_url }}" width="804" height="1748" alt="가진 화장품을 모아둔 바름의 내 선반" decoding="async"></figure>
         <figure class="phone hero-phone-front"><img src="{{ '/assets/images/order.webp' | relative_url }}" width="804" height="1748" alt="오늘의 저녁 루틴과 바르는 순서를 보여주는 바름 앱" fetchpriority="high"></figure>
         <figure class="hero-watch watch-device"><img src="{{ '/assets/images/watch-home.webp' | relative_url }}" width="324" height="394" alt="Apple Watch 바름 앱에서 오늘의 루틴을 확인하는 화면" decoding="async"></figure>
       </div>
@@ -42,7 +42,6 @@
       <p>화장대 앞의 작은 고민이<br><span>나를 돌보는 시간으로.</span></p>
       <nav class="feature-directory" aria-label="바름의 기능 전체 보기">
         <a href="#routine">바르는 순서 <span aria-hidden="true">↗</span></a>
-        <a href="#relations">성분 관계 그래프 <span aria-hidden="true">↗</span></a>
         <a href="#ingredients">성분 구성 트리맵 <span aria-hidden="true">↗</span></a>
         <a href="#absorption">성분 이동 모식도 <span aria-hidden="true">↗</span></a>
         <a href="#widgets">홈·잠금 화면 위젯 <span aria-hidden="true">↗</span></a>
@@ -63,26 +62,12 @@
       <div class="routine-notes"><p><strong>한곳에 모은 내 선반</strong>사용 중인 제품을 담고 살펴보세요.</p><p><strong>아침과 저녁의 루틴</strong>시간대에 맞춰 오늘의 순서를 확인하세요.</p><p><strong>순서와 함께 보는 안내</strong>대기시간과 함께 사용할 때의 주의사항도 확인하세요.</p></div>
     </section>
 
-    <section class="graph-section" id="relations" aria-labelledby="graph-title">
-      <div class="wrap graph-layout">
-        <div class="graph-copy reveal"><p class="section-label">성분 관계 그래프</p><h2 id="graph-title">성분을 잇고,<br><span>이유를 읽어요.</span></h2><p>길게 나열된 성분표에서 한 걸음 더.<br>성분 하나를 선택해 연결된 관계와<br>그 설명의 근거를 살펴보세요.</p>
-          <div class="graph-controls" role="group" aria-label="성분 그래프 화면 예시 선택"><button type="button" data-graph="overview" aria-pressed="true" aria-controls="graph-image">전체 관계</button><button type="button" data-graph="selected" aria-pressed="false" aria-controls="graph-image">성분 선택</button></div>
-          <p class="graph-description" id="graph-description" aria-live="polite">성분 사이의 관계와 연구 참고 연결을 한눈에 살펴봐요.</p>
-          <p class="graph-note">연구에 함께 등장했다는 사실이 효과나 안전성을 보장하지는 않아요. 앱에서 관계 설명과 출처를 함께 확인하세요.</p>
-        </div>
-        <div class="graph-stage reveal">
-          <div class="graph-rings" aria-hidden="true"><i></i><i></i><i></i></div>
-          <figure class="graph-phone phone"><img id="graph-image" src="{{ '/assets/images/graph.webp' | relative_url }}" data-overview="{{ '/assets/images/graph.webp' | relative_url }}" data-selected="{{ '/assets/images/graph-selected.webp' | relative_url }}" width="804" height="1748" alt="성분 관계와 연구 참고 연결을 함께 표시하는 그래프 예시" loading="lazy" decoding="async"></figure>
-        </div>
-      </div>
-    </section>
-
     <section class="ingredients-section wrap section-space" id="ingredients" aria-labelledby="ingredients-title">
       <div class="ingredients-copy reveal">
         <p class="section-label">성분 구성 트리맵</p>
         <h2 id="ingredients-title">내 선반을,<br>성분으로 펼쳐보면.</h2>
         <p class="section-description">여러 제품에 나뉘어 있던 성분을 한곳에.<br>공식 용도와 검증된 효능, 두 가지 기준으로<br>내 선반의 성분 구성을 살펴보세요.</p>
-        <dl class="feature-explanations"><div><dt>공식 용도</dt><dd>공식 자료에 기록된 성분의 용도별로 확인해요.</dd></div><div><dt>검증된 효능</dt><dd>근거가 연결된 성분을 효능별로 살펴봐요.</dd></div><div><dt>구성에서 상세까지</dt><dd>영역을 선택하면 해당 성분 목록과 상세로 이어져요.</dd></div></dl>
+        <dl class="feature-explanations"><div><dt>공식 용도</dt><dd>공식 자료에 기록된 성분의 용도별로 확인해요.</dd></div><div><dt>검증된 효능</dt><dd>근거가 연결된 성분을 효능별로 살펴봐요.</dd></div><div><dt>구성에서 상세까지</dt><dd>영역을 선택하면 성분 목록과 상세로 이어져요. 성분의 설명과 관련 연구 근거도 함께 확인하세요.</dd></div></dl>
         <p class="visual-note">트리맵의 넓이는 분류별 고유 성분 수입니다. 함량이나 효과의 강도를 뜻하지 않습니다.</p>
       </div>
       <div class="ingredients-stage reveal"><figure class="ingredients-screen"><img src="{{ '/assets/images/treemap.webp' | relative_url }}" width="804" height="1748" alt="검증된 효능별 성분 수를 영역 크기로 보여주는 실제 앱 트리맵 데모 화면" loading="lazy" decoding="async"></figure></div>
