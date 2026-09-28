@@ -1,13 +1,6 @@
 ---
-title: 바름(BAREUM)
+layout: landing
+title: 바름 — 가진 화장품, 바르는 순서부터
+description: 가진 화장품의 순서, 성분 관계 그래프와 트리맵, 피부 층별 성분 이동 모식도. 위젯·실시간 현황·다이나믹 아일랜드·Apple Watch로 매일의 루틴을 이어가세요. App Store 출시 예정.
+image: /assets/images/social.png
 ---
-
-# 바름(BAREUM)
-
-가진 화장품의 바르는 순서를 계산해주는 iOS 앱입니다.
-
-이 저장소는 앱의 법적 고지 문서만 담고 있습니다. 앱 소스는 공개하지 않습니다.
-
-- [개인정보처리방침](/privacy/)
-- [이용약관](/terms/)
-- [고객지원](/support/)

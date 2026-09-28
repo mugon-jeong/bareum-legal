@@ -1,5 +1,6 @@
 title: 바름(BAREUM)
-description: 개인정보처리방침 · 이용약관
+description: 가진 화장품의 바르는 순서와 성분 관계를 알아보고 매일의 루틴을 기록하는 iOS 앱
+app_store_url: ""
 theme: jekyll-theme-minimal
 lang: ko-KR
 exclude:
@@ -15,6 +16,7 @@ exclude:
   - node_modules
   - vendor
   - scripts
+  - docs
 defaults:
   - scope:
       path: ""

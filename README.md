@@ -1,6 +1,6 @@
 # bareum-legal
 
-iOS 앱 **바름(BAREUM)** 의 개인정보처리방침·이용약관·고객지원 문서 정본.
+iOS 앱 **바름(BAREUM)** 의 앱 소개 사이트와 개인정보처리방침·이용약관·고객지원 문서 정본.
 문서 소스는 이 GitHub 저장소에서 관리하고, 공개 사이트는 Cloudflare Workers Static Assets로 게시한다.
 
 | 문서 | URL |
@@ -26,10 +26,10 @@ pnpm install --frozen-lockfile
 pnpm build
 pnpm dev
 # 패키징 검증
-pnpm deploy:check
+pnpm run deploy:check
 # 최초 로컬 배포 시 본인 Cloudflare 계정 인증
 pnpm exec wrangler login
-pnpm deploy
+pnpm run deploy
 ```
 
 `_site/`는 빌드 결과이며 커밋하지 않는다. 법적 문서와 기본 테마는 기존 Jekyll 구성을 유지한다.
@@ -56,3 +56,33 @@ Wrangler 배포는 이 영역 규칙을 변경하지 않는다. 영역의 `alway
 
 배포 뒤 홈·약관·개인정보처리방침·고객지원의 HTTPS 200, `www`의 301,
 존재하지 않는 경로의 404와 문서 내용 보존을 확인한다.
+
+## 앱 소개 홈
+
+[유지보수 안내](docs/app-introduction.md)에 전체 기능 범위, 화면 출처, 출시 전환과 검증 기준을 정리한다.
+
+`index.md`는 `_layouts/landing.html`을 사용한다. 스타일과 동작은
+`assets/css/landing.css`, `assets/css/features.css`, `assets/js/landing.js`, 화면 자료는 `assets/images/`에 있다.
+화면 출처와 갱신 기준은 `docs/landing-assets.md`에 기록한다. `docs/`는 배포에서 제외한다.
+
+출시 전에는 `_config.yml`의 `app_store_url`을 빈 문자열로 둔다.
+출시 후 검증한 `https://apps.apple.com/...` 주소 하나를 설정하면 헤더·첫 화면·하단의
+출시 예정 안내가 다운로드 링크로 바뀐다. 링크 설정 후 `index.md`의 description에서도
+출시 예정 문구를 갱신한다. 이메일 신청·분석 스크립트·방문자 데이터 수집은 없다.
+
+로컬 미리보기:
+
+```sh
+PATH=/opt/homebrew/opt/ruby/bin:$PATH pnpm build
+python3 -m http.server 4321 --bind 127.0.0.1 --directory _site
+```
+
+검증은 모바일·데스크톱, 키보드, 동작 줄이기, JavaScript 미사용 상태와 함께
+기존 문서 링크 및 기본 Jekyll 빌드의 도메인 리다이렉트 보존을 확인한다.
+`pnpm run deploy:check`는 패키징 검사이며 실제 배포는 별도다.
+
+## 문의 이메일 라우팅
+
+2026-09-28 `support@bareum.app` → 인증된 기존 문의 Gmail 수신함으로 전달하는 Cloudflare Email Routing 규칙을 추가했다. 기존 `hello@bareum.app`, `admin@bareum.app` 규칙과 DNS는 유지한다. 공개 고객지원 페이지 소스는 `support@bareum.app`을 사용하며 2026-09-28 사이트 운영 배포에 반영했다. 실제 수신 테스트는 아직 수행하지 않았다. 이 설정은 도메인 주소로 발신·답장하는 설정을 포함하지 않는다.
+
+최근 소개 사이트 배포와 운영 검증은 [2026-09-28 배포 기록](docs/releases/2026-09-28-app-introduction.md)에 있다.

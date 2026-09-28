@@ -7,7 +7,7 @@ permalink: /support/
 
 문의는 아래 이메일로 보내 주세요. 영업일 기준 3일 안에 답변드립니다.
 
-- **이메일: conny.jeong@gmail.com**
+- **이메일: [support@bareum.app](mailto:support@bareum.app)**
 
 문의하실 때 **사용 중인 iPhone 기종과 iOS 버전**, 그리고 어느 화면에서 무엇을 하다가
 생긴 일인지 함께 적어 주시면 훨씬 빨리 확인할 수 있습니다.
