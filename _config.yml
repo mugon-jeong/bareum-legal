@@ -2,3 +2,21 @@ title: 바름(BAREUM)
 description: 개인정보처리방침 · 이용약관
 theme: jekyll-theme-minimal
 lang: ko-KR
+exclude:
+  - README.md
+  - THEME-LICENSE.txt
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - pnpm-lock.yaml
+  - pnpm-workspace.yaml
+  - wrangler.jsonc
+  - _config.cloudflare.yml
+  - node_modules
+  - vendor
+  - scripts
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
