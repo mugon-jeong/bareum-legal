@@ -785,3 +785,38 @@
     transform: rotate(4deg);
   }
 }
+
+/* Concern-led routine: the three choices remain in reading order. */
+.ai-section { scroll-margin-top: 100px; }
+.ai-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: end; }
+.ai-intro .section-description { margin-top: 0; }
+.ai-concerns { color: var(--green); font-size: 13px; line-height: 1.8; margin-top: 18px; }
+.ai-steps { list-style: none; padding: 0; margin: 48px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.ai-steps li { min-width: 0; }
+.ai-step-copy { min-height: 192px; }
+.ai-step-number { display: block; color: var(--green); font-size: 13px; font-weight: 650; margin-bottom: 14px; }
+.ai-step-copy h3, .ai-details h3 { font-size: 19px; font-weight: 650; line-height: 1.5; }
+.ai-step-copy p, .ai-details p { color: var(--slate); font-size: 14px; line-height: 1.85; margin-top: 12px; }
+.ai-screen { padding: 24px 20px 0; background: #e8eeea; border-radius: 6px; overflow: hidden; }
+.ai-screen img { width: 100%; height: auto; border: 1px solid #d4ddd7; border-radius: 24px 24px 0 0; display: block; }
+.ai-details { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; margin-top: 38px; padding-top: 30px; border-top: 1px solid var(--line); }
+.ai-availability { color: var(--slate); font-size: 13px; line-height: 1.85; max-width: 850px; margin-top: 28px; }
+.ai-section .asset-note { text-align: left; line-height: 1.85; margin-top: 14px; }
+.ai-section .asset-note a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 1000px) {
+  .ai-intro, .ai-details { gap: 32px; }
+  .ai-steps { gap: 18px; }
+  .ai-step-copy { min-height: 226px; }
+  .ai-screen { padding: 16px 12px 0; }
+}
+@media (max-width: 760px) {
+  .site-header nav { gap: 12px; }
+  .ai-intro, .ai-details { grid-template-columns: 1fr; gap: 24px; }
+  .ai-steps { grid-template-columns: 1fr; gap: 36px; margin-top: 32px; }
+  .ai-step-copy { min-height: 0; margin-bottom: 20px; }
+  .ai-step-copy h3, .ai-details h3 { font-size: 18px; }
+  .ai-screen { padding: 24px 28px 0; max-width: 380px; margin: 0 auto; }
+  .ai-screen img { border-radius: 22px 22px 0 0; }
+  .ai-details { margin-top: 30px; }
+  .ai-availability { font-size: 12px; }
+}
