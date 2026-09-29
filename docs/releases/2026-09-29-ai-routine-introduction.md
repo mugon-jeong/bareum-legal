@@ -1,5 +1,7 @@
 # AI 루틴 소개 반영
 
+[PR #5](https://github.com/mugon-jeong/bareum-legal/pull/5)를 squash 머지했다. 커밋은 `19ccccd97f082d932bf1c5ebde3d9ff967463af6`다.
+
 ## 변경
 
 - 홈에 AI 루틴 앵커와 고민 → 성분 → 제형의 3단계 소개를 추가했다. 건조함·피부 미백·주름 중 1–3개를 고르고, 고민별 핵심 성분·보유 제품과 나머지 제형을 직접 구성하는 흐름을 설명한다.
@@ -10,7 +12,7 @@
 
 ## 검증
 
-- Jekyll 빌드, Wrangler dry-run, JavaScript 구문, diff 검사 통과.
+- Jekyll 빌드, Wrangler dry-run, JavaScript 구문, diff 검사 통과. Cloudflare 빌드에는 legacy refresh가 없고, 별도 기본 Jekyll 빌드에는 기존 도메인 이동 태그가 유지됨을 확인했다.
 - 360/390/768/1440px에서 가로 넘침 없음, 새 화면 3개 로드와 기능 앵커·문서 링크 확인. 데스크톱·모바일 화면을 직접 확인했다.
 - axe WCAG A/AA 명확한 위반 0개. 기존 gradient 위 stage-caption 대비는 자동 판정 미완료로 남으며 화면에서 수동 확인했다.
 - 동작 줄이기 설정과 landing.js 차단 상태에서 본문 표시를 확인했다. 키보드 첫 Tab의 본문 건너뛰기와 Enter 이동도 확인했다.
@@ -18,4 +20,10 @@
 
 ## 운영
 
-최종 소스 머지 후 기존 bareum-legal Worker의 정적 파일로 게시한다. 운영 버전과 공개 경로 검증 결과는 배포 후 기록한다.
+2026-09-29 19:10 KST에 기존 `bareum-legal` Worker에 게시했다.
+
+- 운영 버전: `84c5365d-47db-47fb-9f33-98efb9c30bee` (100%)
+- 배포 ID: `8d8570e1-d782-4449-a598-36fb53fa7d27`
+- 최종 정적 파일 48개 모두 HTTP 200이며 빌드 파일과 바이트가 일치한다.
+- www 및 HTTP 주소 이동, 개인정보 페이지 슬래시 이동, 미등록 경로 404를 확인했다. 기존 도메인·Worker 설정은 유지했다.
+- [운영 AI 루틴 소개](https://bareum.app/#ai-routine)의 모바일 화면과 새 이미지 3개 로드를 확인했다. 운영 페이지 axe WCAG A/AA 검사도 명확한 위반 0개이며, 기존 대비 자동 판정 미완료 1개는 동일하다.
