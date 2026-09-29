@@ -257,7 +257,7 @@ AI 고민 입력 기능에서 해석 버튼으로 제출한 **질문 전체와 A
 처리하겠습니다.
 
 - 개인정보 보호책임자: 바름 운영자
-- 연락처: conny.jeong@gmail.com
+- 연락처: [support@bareum.app](mailto:support@bareum.app)
 
 ## 12. 권익침해 구제 방법
 
