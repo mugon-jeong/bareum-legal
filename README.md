@@ -83,6 +83,6 @@ python3 -m http.server 4321 --bind 127.0.0.1 --directory _site
 
 ## 문의 이메일 라우팅
 
-2026-09-28 `support@bareum.app` → 인증된 기존 문의 Gmail 수신함으로 전달하는 Cloudflare Email Routing 규칙을 추가했다. 기존 `hello@bareum.app`, `admin@bareum.app` 규칙과 DNS는 유지한다. 공개 고객지원 페이지 소스는 `support@bareum.app`을 사용하며 2026-09-28 사이트 운영 배포에 반영했다. 실제 수신 테스트는 아직 수행하지 않았다. 이 설정은 도메인 주소로 발신·답장하는 설정을 포함하지 않는다.
+2026-09-28 `support@bareum.app` → 인증된 기존 문의 Gmail 수신함으로 전달하는 Cloudflare Email Routing 규칙을 추가했다. 기존 `hello@bareum.app`, `admin@bareum.app` 규칙과 DNS는 유지한다. 2026-09-29 기준 고객지원·약관·개인정보처리방침·선택 동의 안내의 공개 문의/철회 연락처는 모두 `support@bareum.app`이다. 개인 Gmail은 내부 전달 수신함으로만 유지하고 공개 문서에는 사용하지 않는다. App Store의 앱 지원 링크는 `/support/`로 연결된다. [연락처 통일 배포 기록](docs/releases/2026-09-29-public-contact-email.md)에 변경 범위와 운영 검증을 보존한다. 실제 수신 테스트는 아직 수행하지 않았다. 이 설정은 도메인 주소로 발신·답장하는 설정을 포함하지 않는다.
 
 최근 AI 루틴 소개 반영과 운영 검증은 [2026-09-29 배포 기록](docs/releases/2026-09-29-ai-routine-introduction.md)에 있다. 초기 소개 사이트 배포는 [2026-09-28 기록](docs/releases/2026-09-28-app-introduction.md)을 참고한다.
