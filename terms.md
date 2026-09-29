@@ -139,4 +139,4 @@ permalink: /terms/
 
 ## 문의
 
-- 연락처: conny.jeong@gmail.com
+- 연락처: [support@bareum.app](mailto:support@bareum.app)
