@@ -1,7 +1,7 @@
 # 앱 소개 화면 자료
 
 - 기존 기능 캡처일: 2026-09-28. AI 루틴 캡처일: 2026-09-29.
-- `order.webp`, `history.webp`, `shelf.webp`: 설치된 Bareum Debug 앱을 별도 `Bareum Website Capture` iPhone 18 Pro / iOS 27 시뮬레이터에서 실행해 캡처. 각각 `--design-preview=tabs`, `history`, `shelf`를 사용했다. 데모 데이터이며 운영 사용자 자료가 아니다. 804×1748 크기 축소와 WebP 변환 외에 앱 내용은 수정하지 않았다.
+- `order.webp`, `shelf.webp`: 설치된 Bareum Debug 앱을 별도 `Bareum Website Capture` iPhone 18 Pro / iOS 27 시뮬레이터에서 실행해 캡처. 각각 `--design-preview=tabs`, `shelf`를 사용했다. 데모 데이터이며 운영 사용자 자료가 아니다. 804×1748 크기 축소와 WebP 변환 외에 앱 내용은 수정하지 않았다.
 - `widget-medium.webp`, `widget-small.webp`: 앱 저장소 `docs/design/screens.html`의 Pen 내보내기에서 `JEWV9`, `swepB` 요소를 브라우저로 캡처했다. 원본 문서는 변경하지 않았다. 실제 위젯 캡처가 아니라 디자인 예시임을 페이지에 명시했다.
 - 위젯 기능 설명 대조: `BareumWidget/NextStepWidget.swift`, `NextStepHomeViews.swift`, `StreakWidget.swift`. 루틴을 앱에서 준비한 뒤 사용하며, 크기와 상태에 따라 표시·조작이 다르다.
 - `app-icon.webp`: 앱의 `Assets.xcassets/AppIcon.appiconset/AppIcon.png` 축소본.
@@ -40,3 +40,9 @@
 기존 순서·선반·트리맵·기록·이동 모식도 자료는 이번에 변경하지 않았다. 기존 `DesignPreview`는 3탭 구조를 사용하므로 단순 재실행으로 4탭 화면이 되지 않는다. 출시 직전 실제 출시 빌드 갱신 시 함께 교체한다.
 
 `social.png`는 2026-09-29 AI 루틴 앵커와 갱신된 소개 문구가 적용된 홈 첫 화면을 1200×630으로 다시 캡처했다. 앱 화면 자체를 합성하거나 수정하지 않았다.
+
+## 기록 안내 문구 갱신 (2026-09-29)
+
+`history.webp`는 무료 기간을 보장하는 문구를 제거한 앱 fixture로 다시 빌드·실행한 실제 데모 화면이다. `Bareum-Free-Copy-Web-20260929` iPhone 18 Pro / iOS 27 시뮬레이터에서 `--design-preview=history`로 캡처했다. 하단 안내는 “이전 달의 기록도 확인할 수 있어요.”이며 가격·무료 기간을 약속하지 않는다.
+
+원본은 `/Users/conny/bareum-backups/20260929-free-copy-web/history.png`에 보존했다. `cwebp -resize 804 1748 -q 90`의 크기·형식 변환만 적용했고 앱 내용은 편집하지 않았다. 합성 fixture 데이터이며 운영 사용자 기록이 아니다.
