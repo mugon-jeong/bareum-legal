@@ -778,9 +778,11 @@ h2 {
     width: calc(100% - 40px);
   }
   .site-header {
-    height: 74px;
-    padding-inline: 20px;
-    gap: 15px;
+    height: auto;
+    min-height: 74px;
+    padding: 16px 20px 0;
+    gap: 4px 15px;
+    flex-wrap: wrap;
   }
   .brand {
     font-size: 23px;
@@ -792,6 +794,10 @@ h2 {
     border-radius: 8px;
   }
   .site-header nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    white-space: nowrap;
     gap: 20px;
     font-size: 12px;
   }

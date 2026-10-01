@@ -65,10 +65,7 @@ Wrangler 배포는 이 영역 규칙을 변경하지 않는다. 영역의 `alway
 `assets/css/landing.css`, `assets/css/features.css`, `assets/js/landing.js`, 화면 자료는 `assets/images/`에 있다.
 화면 출처와 갱신 기준은 `docs/landing-assets.md`에 기록한다. `docs/`는 배포에서 제외한다.
 
-출시 전에는 `_config.yml`의 `app_store_url`을 빈 문자열로 둔다.
-출시 후 검증한 `https://apps.apple.com/...` 주소 하나를 설정하면 헤더·첫 화면·하단의
-출시 예정 안내가 다운로드 링크로 바뀐다. 링크 설정 후 `index.md`의 description에서도
-출시 예정 문구를 갱신한다. 이메일 신청·분석 스크립트·방문자 데이터 수집은 없다.
+`_config.yml`의 `app_store_url`은 공개된 [App Store 페이지](https://apps.apple.com/kr/app/id6807600225)를 가리킨다. 헤더·첫 화면·하단에 다운로드 링크를 제공한다. 이메일 신청·분석 스크립트·방문자 데이터 수집은 없다. [출시 전환 기록](docs/releases/2026-10-01-app-store-launch.md)을 확인한다.
 
 로컬 미리보기:
 
