@@ -34,3 +34,10 @@
 펼친 선반·제품 상세와 화장대 모드 이미지 두 장을 `#duo`에 추가했다. 데모·시뮬레이터 출처, 대체 텍스트, 원본 비율과 반응형 배치를 적용했다. 이미지 출처는 `docs/landing-assets.md` 참조. Jekyll·Wrangler dry-run 통과. 브라우저 1440px·390px에서 이미지 로딩과 가로 넘침 없음을 확인했다.
 
 Cloudflare 배포 ID: `790c03ae7112436ca783efbb3ac3b0db`. App Store 심사에는 두 이미지를 한 PDF로 묶어 첨부했고 처리 상태 `COMPLETE`, 심사 `WAITING_FOR_REVIEW`를 확인했다.
+
+### 배포 후 확인과 자료 위치
+
+- 운영 홈 HTML, `assets/css/features.css`, `duo-unfolded.webp`, `duo-vanity.webp`를 내려받아 `_site` 빌드 결과와 바이트 단위로 일치함을 확인했다. 운영 브라우저에서도 두 이미지의 로딩을 확인했다.
+- 웹 반영 커밋 `e09638a`를 `origin/main`에 푸시했다. 원본 PNG 두 장과 심사 PDF, SHA-256, 캡처 재현 조건은 앱 저장소 커밋 `1e6c74b4`의 `docs/research/duo-public-images-2026-10-10/`에 보존했다.
+- 공개 App Store 스크린샷 갤러리를 교체한 작업은 아니다. 심사 담당자용 첨부 한 파일 제한에 맞춰 두 페이지 PDF를 등록했으며, 기존 제출을 취소하거나 새 바이너리를 올리지 않았다. 위 심사 상태는 첨부 당시 확인 결과다.
+- 일회성 Cloudflare 업로드 세션 파일과 완료 토큰은 배포 검증 후 삭제했다. 기존 별도 작업의 네이버 인증 태그·검색 등록 기록은 이번 커밋에 포함하지 않았다.
