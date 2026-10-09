@@ -46,3 +46,22 @@
 `history.webp`는 무료 기간을 보장하는 문구를 제거한 앱 fixture로 다시 빌드·실행한 실제 데모 화면이다. `Bareum-Free-Copy-Web-20260929` iPhone 18 Pro / iOS 27 시뮬레이터에서 `--design-preview=history`로 캡처했다. 하단 안내는 “이전 달의 기록도 확인할 수 있어요.”이며 가격·무료 기간을 약속하지 않는다.
 
 원본은 `/Users/conny/bareum-backups/20260929-free-copy-web/history.png`에 보존했다. `cwebp -resize 804 1748 -q 90`의 크기·형식 변환만 적용했고 앱 내용은 편집하지 않았다. 합성 fixture 데이터이며 운영 사용자 기록이 아니다.
+
+## 소개 화면 최신화 (2026-10-10)
+
+위 과거 캡처 기록에 우선하여, 다음 8개 파일을 현재 App Store 등록용 앱 데모 캡처로 교체했다. 이번 작업에서 새 앱 캡처를 촬영한 것은 아니다. 앱 저장소 `docs/research/` 아래 원본을 사용했으며, 제품·문구·UI를 합성하지 않았다.
+
+| 사이트 이미지 | 원본 |
+|---|---|
+| `order.webp` | `app-store-screenshots-2026-09-29/01-order.png` |
+| `shelf.webp` | `app-store-screenshots-2026-09-29/03-shelf.png` |
+| `absorption.webp` | `app-store-screenshots-2026-09-29/04-distribution.png` |
+| `ai-concerns.webp` | `app-store-screenshots-2026-09-29/05-ai-concerns.png` |
+| `ai-ingredients.webp` | `app-store-screenshots-2026-09-29/06-ai-ingredients.png` |
+| `ai-forms.webp` | `app-store-screenshots-2026-09-29/07-ai-forms.png` |
+| `watch-home.webp` | `app-store-watch-screenshots-2026-09-29/01-watch-home.png` |
+| `watch-routine.webp` | `app-store-watch-screenshots-2026-10-07/02-watch-routine.png` |
+
+아이폰은 804×1748, 워치는 원본 368×448을 유지하여 WebP quality 90으로 변환했다. 순서·선반은 4탭 공용 UI를 사용한다. AI 화면은 주입된 데모 안내이며 실제 모델 출력이 아니다. AI 성분 화면의 근거는 기존 합성 문헌 예시 대신 App Store 원본에 포함된 기준 데이터의 문헌으로 교체됐다.
+
+위젯·다이나믹 아일랜드·실시간 현황의 디자인 예시 표시는 유지한다. 트리맵·기록·공유 이미지의 기존 출처도 유지한다. 최신 심사 빌드 65의 모든 화면을 재촬영했다고 해석하지 않는다.
