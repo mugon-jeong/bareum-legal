@@ -7,7 +7,7 @@
   {% seo %}
   <link rel="icon" type="image/webp" href="{{ '/assets/images/app-icon.webp' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/landing.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/css/features.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/features.css' | relative_url }}?v=20261010-duo">
   <link rel="preload" as="image" href="{{ '/assets/images/order.webp' | relative_url }}">
   {% include head-custom.html %}
   <script src="{{ '/assets/js/landing.js' | relative_url }}" defer></script>
@@ -131,7 +131,11 @@
         <div><h3>펼친 화면에서 나란히 탐색</h3><p>선반과 선택한 제품·성분의 상세를 함께 살펴보세요. 순서 화면에서는 단계 목록 옆으로 설명·대기 안내·주의사항·근거를 확인할 수 있어요.</p></div>
         <div><h3>화장대 모드로 한 단계씩</h3><p>루틴을 시작한 뒤 화장대 모드를 직접 켜세요. 반쯤 접어 세워두면 위쪽에서 제품·주의사항·남은 대기시간을 확인하고, 아래쪽의 넓은 ‘발랐어요’ 버튼으로 진행할 수 있어요.</p></div>
       </div>
-      <p class="asset-note">접거나 펼치고 화면을 돌려도 선택한 내용과 루틴 진행을 이어가요. 화면 공간과 글씨 크기에 따라 배치가 달라집니다. iPhone Duo 지원은 심사 중인 1.0.3에 포함되며, App Store 제공 시점은 심사 결과에 따라 달라집니다.</p>
+      <div class="duo-gallery">
+        <figure><img src="{{ '/assets/images/duo-unfolded.webp' | relative_url }}" width="1426" height="1004" alt="iPhone Duo의 펼친 화면에서 데모 보습 크림의 선반 목록과 제품 상세를 나란히 보여주는 앱 화면" loading="lazy" decoding="async"><figcaption>펼친 탐색 · 선반과 제품 상세를 나란히</figcaption></figure>
+        <figure><img src="{{ '/assets/images/duo-vanity.webp' | relative_url }}" width="804" height="1143" alt="iPhone Duo 화장대 모드에서 제품 안내와 주의사항을 위에, 발랐어요 버튼을 아래에 배치한 앱 화면" loading="lazy" decoding="async"><figcaption>화장대 모드 · 위쪽 안내, 아래쪽 조작</figcaption></figure>
+      </div>
+      <p class="asset-note">이미지는 iPhone Duo 시뮬레이터에서 촬영한 앱의 데모 화면입니다. 접거나 펼치고 화면을 돌려도 선택한 내용과 루틴 진행을 이어가요. 화면 공간과 글씨 크기에 따라 배치가 달라집니다. iPhone Duo 지원은 심사 중인 1.0.3에 포함되며, App Store 제공 시점은 심사 결과에 따라 달라집니다.</p>
     </section>
 
     <section class="watch-section" id="watch" aria-labelledby="watch-title"><div class="wrap watch-layout">

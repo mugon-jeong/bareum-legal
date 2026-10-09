@@ -1,4 +1,18 @@
 /* The complete product story: ingredient views and companion surfaces. */
+.duo-gallery {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  align-items: center;
+  gap: 40px;
+  margin: 48px 0 24px;
+}
+.duo-gallery figure { min-width: 0; margin: 0; }
+.duo-gallery img { display: block; width: 100%; height: auto; border: 1px solid #e0e3e8; border-radius: 18px; }
+.duo-gallery figcaption { margin-top: 16px; font-size: 13px; color: var(--slate); line-height: 1.6; }
+@media (max-width: 680px) {
+  .duo-gallery { grid-template-columns: 1fr; gap: 32px; }
+  .duo-gallery figure:last-child { width: 82%; justify-self: center; }
+}
 .feature-directory {
   display: grid;
   grid-template-columns: 1fr 1fr;
