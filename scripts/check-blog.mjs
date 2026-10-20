@@ -73,22 +73,28 @@ for (const file of pages) {
   }
 }
 
-// 대표 글: 고민마다 1편
+// 대표 글: 고민마다 1편이 있어야 하고, _posts 의 모든 글이 같은 규칙을 지킨다
 const POST_FORBIDDEN = /최고|가장 좋|치료|여드름|비듬|기미/;
-for (const concern of concerns) {
-  const file = join(blogDir, concern.code, "index.html");
+const today = new Date().toISOString().slice(0, 10);
+const postSlugs = (existsSync(join(root, "_posts")) ? readdirSync(join(root, "_posts")) : [])
+  .filter((name) => name.endsWith(".md") && name.slice(0, 10) <= today)
+  .map((name) => name.slice(11, -3));
+for (const concern of concerns) if (!postSlugs.includes(concern.code)) fail(`대표 글 없음: /blog/${concern.code}/`);
+for (const slug of postSlugs) {
+  const file = join(blogDir, slug, "index.html");
   if (!existsSync(file)) {
-    fail(`대표 글 없음: /blog/${concern.code}/`);
+    fail(`글이 빌드되지 않음: /blog/${slug}/`);
     continue;
   }
   const html = readFileSync(file, "utf8");
-  if (!/"@type":\s*"(Article|BlogPosting)"/.test(html)) fail(`/blog/${concern.code}/: Article JSON-LD 없음`);
-  if (!html.includes('href="/blog/ingredients/')) fail(`/blog/${concern.code}/: 성분 페이지 링크 없음`);
-  if (!html.includes(`href="/blog/concerns/${concern.code}/"`)) fail(`/blog/${concern.code}/: 고민 페이지 링크 없음`);
+  if (!/"@type":\s*"(Article|BlogPosting)"/.test(html)) fail(`/blog/${slug}/: Article JSON-LD 없음`);
+  if (!html.includes('href="/blog/ingredients/')) fail(`/blog/${slug}/: 성분 페이지 링크 없음`);
+  const concern = concerns.find((c) => c.code === slug);
+  if (concern && !html.includes(`href="/blog/concerns/${concern.code}/"`)) fail(`/blog/${slug}/: 고민 페이지 링크 없음`);
   const body = html.match(/<div class="blog-post-body">([\s\S]*?)<\/div>/)?.[1] ?? "";
-  if (!body) fail(`/blog/${concern.code}/: 본문 없음`);
+  if (!body) fail(`/blog/${slug}/: 본문 없음`);
   const word = body.match(POST_FORBIDDEN);
-  if (word) fail(`/blog/${concern.code}/: 금지 표현 "${word[0]}"`);
+  if (word) fail(`/blog/${slug}/: 금지 표현 "${word[0]}"`);
 }
 
 // 대표 글의 수치는 스냅숏 근거와 같아야 한다
