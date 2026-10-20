@@ -1,0 +1,26 @@
+---
+layout: blog
+---
+{% assign concern = page.concern %}
+{% assign ids = site.data.blog.effects[concern.effect_id].ingredient_ids %}
+<article class="blog-article">
+  <nav class="blog-crumbs" aria-label="위치"><a href="{{ '/blog/' | relative_url }}">성분 이야기</a> <span aria-hidden="true">›</span> 고민</nav>
+  <h1>{{ concern.title }}</h1>
+  <p class="blog-lede">{{ concern.intro }}</p>
+
+  <section aria-labelledby="list-title">
+    <h2 id="list-title">근거가 있는 성분{% if ids.size > 0 %} {{ ids.size }}개{% endif %}</h2>
+    {% if ids.size > 0 %}
+    <p class="blog-note">가나다순입니다. 순서는 효과의 크기와 관계없습니다.</p>
+    <ul class="blog-ingredient-list">
+      {% for id in ids %}{% assign ingredient = site.data.blog.ingredients | where: "id", id | first %}{% assign claim = ingredient.claims | where: "effect_id", concern.effect_id | first %}
+      <li><a href="{{ '/blog/ingredients/' | append: ingredient.id | append: '/' | relative_url }}"><strong>{{ ingredient.name_kr }}</strong>{% if ingredient.inci %}<span>{{ ingredient.inci }}</span>{% endif %}<small>{% if claim.condition_label %}{{ claim.condition_label }} · {{ claim.at | split: ' — ' | last }}{% else %}{{ claim.claim }}{% endif %}</small></a></li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="blog-note">현재 근거가 등록된 성분이 없어요.</p>
+    {% endif %}
+  </section>
+
+  {% include blog-cta.html campaign=page.campaign %}
+</article>

@@ -1,0 +1,8 @@
+<aside class="blog-cta" aria-label="바름 앱 안내">
+  <img src="{{ '/assets/images/app-icon.webp' | relative_url }}" width="56" height="56" alt="" loading="lazy">
+  <div>
+    {% if include.ingredient_name %}<p class="blog-cta-title">내 화장대 제품에 {{ include.ingredient_name }}이(가) 들었는지, 바름으로 스캔해 확인하세요</p>{% else %}<p class="blog-cta-title">가진 화장품의 성분을 바름으로 스캔해 확인하세요</p>{% endif %}
+    <p class="blog-cta-body">성분표를 찍으면 내 선반의 제품마다 어떤 성분이 들었는지, 어떤 순서로 바르면 되는지 알려 드려요.</p>
+    <a class="button primary" href="{% include blog-app-url.html campaign=include.campaign %}">App Store에서 다운로드 <span aria-hidden="true">↗</span></a>
+  </div>
+</aside>

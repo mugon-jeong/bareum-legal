@@ -1,0 +1,15 @@
+{% assign claim = include.claim %}
+<article class="claim-card">
+  <header>
+    <h3>{{ claim.effect_name }}</h3>
+    <span class="claim-source-type">{{ claim.source_type }}</span>
+  </header>
+  <p class="claim-text">{{ claim.claim }}</p>
+  <dl>
+    <div><dt>{% if claim.condition_label %}{{ claim.condition_label }}{% else %}원문{% endif %}</dt><dd>{{ claim.at }}</dd></div>
+    {% if claim.population %}<div><dt>대상</dt><dd>{{ claim.population }}</dd></div>{% endif %}
+    <div><dt>출처</dt><dd><a href="{{ claim.url | escape }}" target="_blank" rel="noopener">{% if claim.cite %}{{ claim.cite }}{% else %}{{ claim.source_id }}{% endif %}</a>{% if claim.source_as_of %} · {{ claim.source_as_of }}{% endif %}</dd></div>
+  </dl>
+  {% assign concern = site.data.blog_concerns | where: "effect_id", claim.effect_id | first %}
+  {% if concern %}<a class="claim-more" href="{{ '/blog/concerns/' | append: concern.code | append: '/' | relative_url }}">{{ concern.title }}에 근거가 있는 다른 성분 <span aria-hidden="true">→</span></a>{% endif %}
+</article>

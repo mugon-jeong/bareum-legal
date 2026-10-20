@@ -1,0 +1,214 @@
+/* 성분 블로그. landing.css 의 토큰(--shell·--ink·--slate·--line·--green)을 그대로 쓴다. */
+.blog .site-header nav {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.blog-main {
+  width: min(760px, calc(100% - 40px));
+  margin: 24px auto 72px;
+}
+.blog-article h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  letter-spacing: -0.06em;
+  line-height: 1.15;
+}
+.blog-article h2 {
+  margin: 48px 0 16px;
+  font-size: 22px;
+  letter-spacing: -0.04em;
+}
+.blog-article p,
+.blog-article li {
+  line-height: 1.75;
+}
+.blog-crumbs {
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: var(--slate);
+}
+.blog-crumbs a:hover,
+.blog-article a:hover {
+  color: var(--green);
+}
+.blog-inci {
+  margin-top: 8px;
+  color: var(--slate);
+  font-size: 15px;
+  letter-spacing: 0;
+}
+.blog-lede {
+  margin-top: 20px;
+  font-size: 17px;
+  color: var(--slate);
+}
+.blog-note {
+  font-size: 13px;
+  color: var(--slate);
+  margin-bottom: 12px;
+}
+.claim-card {
+  margin-top: 14px;
+  padding: 22px 24px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+}
+.claim-card header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.claim-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.claim-source-type {
+  flex: none;
+  padding: 4px 10px;
+  border-radius: 50px;
+  background: #e6f3f0;
+  color: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+}
+.claim-text {
+  margin-top: 8px;
+  font-weight: 600;
+}
+.claim-card dl {
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.claim-card dl div {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 12px;
+}
+.claim-card dt {
+  color: var(--slate);
+  font-size: 13px;
+  font-weight: 600;
+}
+.claim-card dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+.claim-card dd a,
+.blog-functions a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.claim-more {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+}
+.blog-functions {
+  padding-left: 20px;
+  font-size: 15px;
+}
+.blog-ingredient-list,
+.blog-post-list,
+.blog-concern-grid,
+.blog-ingredient-index {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.blog-ingredient-list li + li,
+.blog-post-list li + li {
+  border-top: 1px solid var(--line);
+}
+.blog-ingredient-list a,
+.blog-post-list a {
+  display: grid;
+  gap: 2px;
+  padding: 14px 0;
+}
+.blog-ingredient-list span,
+.blog-ingredient-list small,
+.blog-post-list small,
+.blog-concern-grid small {
+  color: var(--slate);
+  font-size: 13px;
+  letter-spacing: -0.01em;
+}
+.blog-concern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+.blog-concern-grid a {
+  display: grid;
+  gap: 4px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+}
+.blog-ingredient-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.blog-ingredient-index a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  font-size: 14px;
+  background: #fff;
+}
+.blog-cta {
+  margin-top: 56px;
+  padding: 28px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+}
+.blog-cta img {
+  flex: none;
+  border-radius: 14px;
+}
+.blog-cta-title {
+  font-size: 19px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+.blog-cta-body {
+  margin: 8px 0 18px;
+  color: var(--slate);
+  font-size: 14px;
+}
+.blog-disclaimer,
+.blog-as-of {
+  margin-top: 32px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--slate);
+}
+.blog-as-of {
+  margin-top: 6px;
+}
+@media (max-width: 760px) {
+  .blog-cta {
+    flex-direction: column;
+    padding: 22px;
+  }
+  .claim-card {
+    padding: 18px;
+  }
+  .claim-card dl div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
