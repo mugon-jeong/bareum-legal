@@ -12,7 +12,7 @@ const concerns = JSON.parse(readFileSync(join(root, "_data/blog_concerns.json"),
 const DISCLAIMER = "성분에 대한 근거이며, 이 성분이 든 특정 제품의 효능을 뜻하지 않습니다. 제품의 실제 함량은 제품마다 다릅니다.";
 const CAMPAIGNS = ["blog-ingredient", "blog-concern", "blog-post", "blog-index"];
 const EMPTY_CONCERN = "현재 근거가 등록된 성분이 없어요";
-const FORBIDDEN = [/coupang/i, /쿠팡/, />\s*null\s*</, />\s*undefined\s*</];
+const FORBIDDEN = [/coupang/i, /쿠팡/, />\s*null\s*</, />\s*undefined\s*</, /이\(가\)/, /가장/];
 
 const failures = [];
 const fail = (message) => failures.push(message);
@@ -89,6 +89,24 @@ for (const concern of concerns) {
   if (!body) fail(`/blog/${concern.code}/: 본문 없음`);
   const word = body.match(POST_FORBIDDEN);
   if (word) fail(`/blog/${concern.code}/: 금지 표현 "${word[0]}"`);
+}
+
+// 대표 글의 수치는 스냅숏 근거와 같아야 한다
+const ingredientsById = new Map(snapshot.ingredients.map((i) => [i.id, i]));
+const postsDir = join(root, "_posts");
+for (const name of existsSync(postsDir) ? readdirSync(postsDir) : []) {
+  const source = readFileSync(join(postsDir, name), "utf8");
+  for (const [, id, value] of source.matchAll(/\]\(\/blog\/ingredients\/([^/]+)\/\)\s*(?:최대\s*)?([\d.,~]+(?:%|IU\/g))/g)) {
+    const ingredient = ingredientsById.get(id);
+    if (!ingredient?.claims.some((c) => c.at.includes(value))) fail(`${name}: ${id} ${value} 가 근거 원문에 없음`);
+  }
+}
+for (const concern of concerns) {
+  const file = join(blogDir, concern.code, "index.html");
+  if (!existsSync(file)) continue;
+  const body = readFileSync(file, "utf8").match(/<div class="blog-post-body">([\s\S]*?)<\/div>/)?.[1] ?? "";
+  const size = snapshot.effects[concern.effect_id].ingredient_ids.length;
+  for (const [, n] of body.matchAll(/(\d+)가지/g)) if (Number(n) !== size) fail(`/blog/${concern.code}/: "${n}가지" ≠ 스냅숏 ${size}`);
 }
 
 // 사이트맵: 모든 블로그 페이지 URL
