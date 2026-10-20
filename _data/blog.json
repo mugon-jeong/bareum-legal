@@ -1,0 +1,1307 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-20T07:53:58.791Z",
+  "effects": {
+    "brightening": {
+      "name_kr": "미백",
+      "ingredient_ids": [
+        "niacinamide",
+        "broussonetia_extract",
+        "map",
+        "ascorbyl_glucoside",
+        "ascorbyl_tip",
+        "arbutin",
+        "alpha_bisabolol",
+        "ethyl_ascorbic_ether",
+        "licorice_extract"
+      ]
+    },
+    "wrinkle": {
+      "name_kr": "주름 개선",
+      "ingredient_ids": [
+        "retinol",
+        "retinyl_palmitate",
+        "adenosine",
+        "peg_retinamide"
+      ]
+    },
+    "uv": {
+      "name_kr": "자외선 차단",
+      "ingredient_ids": [
+        "4_methylbenzylidene_camphor",
+        "drometrizole",
+        "drometrizole_trisiloxane",
+        "digalloyl_trioleate",
+        "disodium_phenyl_dibenzimidazole_tetrasulfonate",
+        "diethylamino_hydroxybenzoyl_hexyl_benzoate",
+        "diethylhexyl_butamido_triazone",
+        "methylene_bis_benzotriazolyl_tetramethylbutylphenol",
+        "menthyl_anthranilate",
+        "benzophenone_3",
+        "benzophenone_4",
+        "benzophenone_8",
+        "bmdbm",
+        "bis_ethylhexyloxyphenol_methoxyphenyl_triazine",
+        "cinoxate",
+        "ethylhexyl_dimethyl_paba",
+        "ehmc",
+        "ethylhexyl_salicylate",
+        "ethylhexyl_triazone",
+        "octocrylene",
+        "isoamyl_p_methoxycinnamate",
+        "zinc_oxide",
+        "terephthalylidene_dicamphor_sulfonic_acid",
+        "titanium_dioxide",
+        "phenylbenzimidazole_sulfonic_acid",
+        "polysilicone_15",
+        "homosalate"
+      ]
+    },
+    "moisturizing": {
+      "name_kr": "보습·장벽",
+      "ingredient_ids": [
+        "ha_hydrolyzed",
+        "glycerin",
+        "dexpanthenol",
+        "mineral_oil",
+        "betaine",
+        "urea",
+        "caffeine",
+        "trehalose",
+        "panthenol",
+        "petrolatum",
+        "propanediol"
+      ]
+    }
+  },
+  "ingredients": [
+    {
+      "id": "4_methylbenzylidene_camphor",
+      "name_kr": "4-메칠벤질리덴캠퍼",
+      "inci": "4-Methylbenzylidene Camphor",
+      "claims": [
+        {
+          "edge_id": 7631,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 4-메칠벤질리덴캠퍼 4%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ha_hydrolyzed",
+      "name_kr": "가수분해하이알루로닉애씨드",
+      "inci": "Hydrolyzed Hyaluronic Acid",
+      "claims": [
+        {
+          "edge_id": 7600,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "각질층 수분량 증가",
+          "at": "Parikesit M, et al. Arch Dermatol Res. 2024;316(6):329 — 저분자 하이알루로닉애씨드 도포군의 피부 수분량(capacitance)이 고분자군·기제군 대비 유의하게 증가(각 p=0.004, p<0.001)",
+          "population": "사람 36명(고령 요양원 거주자) 4주 이중맹검 무작위 대조",
+          "cite": "Parikesit 2024",
+          "source_id": "10.1007/s00403-024-03003-2",
+          "url": "https://doi.org/10.1007/s00403-024-03003-2",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "glycerin",
+      "name_kr": "글리세린",
+      "inci": "Glycerin",
+      "claims": [
+        {
+          "edge_id": 7599,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "각질층 수분량 증가",
+          "at": "Lodén M, et al. Int J Cosmet Sci. 2001;23(2):115-119 — 20% 글리세린 크림이 위약 대비 각질층 수분량(corneometer) 유의하게 증가",
+          "population": "사람 17명 10일 이중맹검 대조",
+          "cite": "Lodén 2001",
+          "source_id": "10.1046/j.1467-2494.2001.00060.x",
+          "url": "https://doi.org/10.1046/j.1467-2494.2001.00060.x",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "niacinamide",
+      "name_kr": "나이아신아마이드",
+      "inci": "Niacinamide",
+      "claims": [
+        {
+          "edge_id": 55,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 나이아신아마이드 2~5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "broussonetia_extract",
+      "name_kr": "닥나무추출물",
+      "inci": "Broussonetia Extract",
+      "claims": [
+        {
+          "edge_id": 66,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 닥나무추출물 2%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "dexpanthenol",
+      "name_kr": "덱스판테놀",
+      "inci": "Dexpanthenol",
+      "claims": [
+        {
+          "edge_id": 7619,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "장벽손상 후 경표피수분손실 회복 가속",
+          "at": "Proksch E, Nissen HP. J Dermatolog Treat. 2002;13(4):173-178 — 2.5%·5% 덱스판테놀 함유 크림을 SLS로 자극한 피부에 하루 2회 도포하니 위약 비히클 대비 경표피수분손실 회복이 유의하게 가속되고, 각질층 수분량 증가·거칠기 감소·홍반 감소도 함께 우수함",
+          "population": "사람 20명 SLS 반복세척 자극 시험",
+          "cite": "Proksch 2002",
+          "source_id": "PMID:19753737",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19753737/",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "drometrizole",
+      "name_kr": "드로메트리졸",
+      "inci": "Drometrizole",
+      "claims": [
+        {
+          "edge_id": 7633,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 드로메트리졸 1%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": [
+        {
+          "code": "UV ABSORBER",
+          "label": "제형 자외선 흡수제",
+          "description": "자외선으로 인한 영향에서 화장품 자체를 보호하는 용도입니다. 피부 자외선 차단 용도와 구분합니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/33741",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "drometrizole_trisiloxane",
+      "name_kr": "드로메트리졸트리실록산",
+      "inci": "Drometrizole Trisiloxane",
+      "claims": [
+        {
+          "edge_id": 7635,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 드로메트리졸트리실록산 15%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "digalloyl_trioleate",
+      "name_kr": "디갈로일트리올리에이트",
+      "inci": "Digalloyl Trioleate",
+      "claims": [
+        {
+          "edge_id": 7637,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 디갈로일트리올리에이트 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "disodium_phenyl_dibenzimidazole_tetrasulfonate",
+      "name_kr": "디소듐페닐디벤즈이미다졸테트라설포네이트",
+      "inci": "Disodium Phenyl Dibenzimidazole Tetrasulfonate",
+      "claims": [
+        {
+          "edge_id": 7639,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 디소듐페닐디벤즈이미다졸테트라설포네이트 산으로 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "diethylamino_hydroxybenzoyl_hexyl_benzoate",
+      "name_kr": "디에칠아미노하이드록시벤조일헥실벤조에이트",
+      "inci": "Diethylamino Hydroxybenzoyl Hexyl Benzoate",
+      "claims": [
+        {
+          "edge_id": 7641,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 디에칠아미노하이드록시벤조일헥실벤조에이트 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "diethylhexyl_butamido_triazone",
+      "name_kr": "디에칠헥실부타미도트리아존",
+      "inci": "Diethylhexyl Butamido Triazone",
+      "claims": [
+        {
+          "edge_id": 7643,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 디에칠헥실부타미도트리아존 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "retinol",
+      "name_kr": "레티놀",
+      "inci": "Retinol",
+      "claims": [
+        {
+          "edge_id": 3,
+          "effect_id": "wrinkle",
+          "effect_name": "주름 개선",
+          "source_type": "고시",
+          "claim": "주름 개선에 도움",
+          "at": "3. 피부의 주름개선에 도움을 주는 제품의 성분 및 함량 — 레티놀 2,500IU/g",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "retinyl_palmitate",
+      "name_kr": "레티닐팔미테이트",
+      "inci": "Retinyl Palmitate",
+      "claims": [
+        {
+          "edge_id": 9,
+          "effect_id": "wrinkle",
+          "effect_name": "주름 개선",
+          "source_type": "고시",
+          "claim": "주름 개선에 도움",
+          "at": "3. 피부의 주름개선에 도움을 주는 제품의 성분 및 함량 — 레티닐팔미테이트 10,000IU/g",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "map",
+      "name_kr": "마그네슘아스코빌포스페이트",
+      "inci": "Magnesium Ascorbyl Phosphate",
+      "claims": [
+        {
+          "edge_id": 28,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 마그네슘아스코빌포스페이트 3%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "methylene_bis_benzotriazolyl_tetramethylbutylphenol",
+      "name_kr": "메칠렌비스-벤조트리아졸릴테트라메칠부틸페놀",
+      "inci": "Methylene Bis-Benzotriazolyl Tetramethylbutylphenol",
+      "claims": [
+        {
+          "edge_id": 7645,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 메칠렌비스-벤조트리아졸릴테트라메칠부틸페놀 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "menthyl_anthranilate",
+      "name_kr": "멘틸안트라닐레이트",
+      "inci": "Menthyl Anthranilate",
+      "claims": [
+        {
+          "edge_id": 7647,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 멘틸안트라닐레이트 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": [
+        {
+          "code": "UV ABSORBER",
+          "label": "제형 자외선 흡수제",
+          "description": "자외선으로 인한 영향에서 화장품 자체를 보호하는 용도입니다. 피부 자외선 차단 용도와 구분합니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/78158",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "mineral_oil",
+      "name_kr": "미네랄오일",
+      "inci": "Mineral Oil",
+      "claims": [
+        {
+          "edge_id": 7606,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "각질층 수분량 증가",
+          "at": "Agero AL, Verallo-Rowell VM. Dermatitis. 2004;15(3):109-116 — 미네랄오일을 다리 건조피부에 하루 2회 2주 도포한 군의 각질층 수분량(corneometer)이 유의하게 증가",
+          "population": "사람 34명 2주 무작위 이중맹검 대조",
+          "cite": "Agero 2004",
+          "source_id": "PMID:15724344",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/15724344/",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "betaine",
+      "name_kr": "베타인",
+      "inci": "Betaine",
+      "claims": [
+        {
+          "edge_id": 7601,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "계면활성제 자극 후 경표피수분손실 감소",
+          "at": "Nicander I, et al. Skin Res Technol. 2003;9(1):50-58 — SLS·CAPB 자극 부위에 베타인을 더하면 경표피수분손실·자극 반응 감소",
+          "population": "사람 21명 첩포시험",
+          "cite": "Nicander 2003",
+          "source_id": "10.1034/j.1600-0846.2003.00367.x",
+          "url": "https://doi.org/10.1034/j.1600-0846.2003.00367.x",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": [
+        {
+          "code": "HAIR CONDITIONING",
+          "label": "모발 컨디셔닝제",
+          "description": "모발의 외관과 촉감을 조절하고 빗질 용이성·유연함·윤기·볼륨 등을 부여하는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/74520",
+          "source_as_of": null
+        },
+        {
+          "code": "HUMECTANT",
+          "label": "제형 수분 유지제",
+          "description": "사용 중 제품 안의 수분을 유지하는 용도입니다. 피부 수분 증가를 뜻하는 별도 용도와 구분합니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/74520",
+          "source_as_of": null
+        },
+        {
+          "code": "SKIN CONDITIONING - HUMECTANT",
+          "label": "피부 컨디셔닝제·흡습",
+          "description": "주로 주변 공기의 수분을 끌어당기는 흡습 작용으로 피부 상층의 수분 함량을 높이기 위한 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/74520",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "benzophenone_3",
+      "name_kr": "벤조페논-3",
+      "inci": "Benzophenone-3",
+      "claims": [
+        {
+          "edge_id": 7649,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 벤조페논-3 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "benzophenone_4",
+      "name_kr": "벤조페논-4",
+      "inci": "Benzophenone-4",
+      "claims": [
+        {
+          "edge_id": 7651,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 벤조페논-4 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": [
+        {
+          "code": "LIGHT STABILIZER",
+          "label": "광 안정제",
+          "description": "빛으로 인해 화장품이 변질되는 것을 막는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32143",
+          "source_as_of": null
+        },
+        {
+          "code": "UV ABSORBER",
+          "label": "제형 자외선 흡수제",
+          "description": "자외선으로 인한 영향에서 화장품 자체를 보호하는 용도입니다. 피부 자외선 차단 용도와 구분합니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32143",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "benzophenone_8",
+      "name_kr": "벤조페논-8",
+      "inci": "Benzophenone-8",
+      "claims": [
+        {
+          "edge_id": 7653,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 벤조페논-8 3%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": [
+        {
+          "code": "UV ABSORBER",
+          "label": "제형 자외선 흡수제",
+          "description": "자외선으로 인한 영향에서 화장품 자체를 보호하는 용도입니다. 피부 자외선 차단 용도와 구분합니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32147",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "bmdbm",
+      "name_kr": "부틸메톡시디벤조일메탄",
+      "inci": "Butyl Methoxydibenzoylmethane",
+      "claims": [
+        {
+          "edge_id": 157,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 부틸메톡시디벤조일메탄 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "bis_ethylhexyloxyphenol_methoxyphenyl_triazine",
+      "name_kr": "비스-에칠헥실옥시페놀메톡시페닐트리아진",
+      "inci": "Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine",
+      "claims": [
+        {
+          "edge_id": 7655,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 비스-에칠헥실옥시페놀메톡시페닐트리아진 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "cinoxate",
+      "name_kr": "시녹세이트",
+      "inci": "Cinoxate",
+      "claims": [
+        {
+          "edge_id": 7657,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 시녹세이트 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "adenosine",
+      "name_kr": "아데노신",
+      "inci": "Adenosine",
+      "claims": [
+        {
+          "edge_id": 74,
+          "effect_id": "wrinkle",
+          "effect_name": "주름 개선",
+          "source_type": "고시",
+          "claim": "주름 개선에 도움",
+          "at": "3. 피부의 주름개선에 도움을 주는 제품의 성분 및 함량 — 아데노신 0.04%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": [
+        {
+          "code": "SKIN CONDITIONING",
+          "label": "피부 컨디셔닝제",
+          "description": "피부를 양호한 상태로 유지하기 위한 포괄적 원료 용도 분류입니다. 보습·진정 등 개별 임상 효능을 뜻하지 않습니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/31367",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "ascorbyl_glucoside",
+      "name_kr": "아스코빌글루코사이드",
+      "inci": "Ascorbyl Glucoside",
+      "claims": [
+        {
+          "edge_id": 25,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 아스코빌글루코사이드 2%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ascorbyl_tip",
+      "name_kr": "아스코빌테트라이소팔미테이트",
+      "inci": "Ascorbyl Tetraisopalmitate",
+      "claims": [
+        {
+          "edge_id": 33,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 아스코빌테트라이소팔미테이트 2%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "arbutin",
+      "name_kr": "알부틴",
+      "inci": "Arbutin",
+      "claims": [
+        {
+          "edge_id": 58,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 알부틴 2~5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "alpha_bisabolol",
+      "name_kr": "알파-비사보롤",
+      "inci": "Bisabolol",
+      "claims": [
+        {
+          "edge_id": 61,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 알파-비사보롤 0.5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ethyl_ascorbic_ether",
+      "name_kr": "에칠아스코빌에텔",
+      "inci": "3-O-Ethyl Ascorbic Acid",
+      "claims": [
+        {
+          "edge_id": 22,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 에칠아스코빌에텔 1~2%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ethylhexyl_dimethyl_paba",
+      "name_kr": "에칠헥실디메칠파바",
+      "inci": "Ethylhexyl Dimethyl PABA",
+      "claims": [
+        {
+          "edge_id": 7659,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 에칠헥실디메칠파바 8%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ehmc",
+      "name_kr": "에칠헥실메톡시신나메이트",
+      "inci": "Ethylhexyl Methoxycinnamate",
+      "claims": [
+        {
+          "edge_id": 148,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 에칠헥실메톡시신나메이트 7.5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ethylhexyl_salicylate",
+      "name_kr": "에칠헥실살리실레이트",
+      "inci": "Ethylhexyl Salicylate",
+      "claims": [
+        {
+          "edge_id": 7661,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 에칠헥실살리실레이트 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "ethylhexyl_triazone",
+      "name_kr": "에칠헥실트리아존",
+      "inci": "Ethylhexyl Triazone",
+      "claims": [
+        {
+          "edge_id": 7663,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 에칠헥실트리아존 5%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "octocrylene",
+      "name_kr": "옥토크릴렌",
+      "inci": "Octocrylene",
+      "claims": [
+        {
+          "edge_id": 7665,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 옥토크릴렌 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "urea",
+      "name_kr": "우레아",
+      "inci": "Urea",
+      "claims": [
+        {
+          "edge_id": 7603,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "경표피수분손실 감소",
+          "at": "Lodén M. Arch Dermatol Res. 1996;288(2):103-107 — 우레아 함유 보습제를 10·20일 도포한 부위의 경표피수분손실 감소",
+          "population": "사람 72명 이중맹검 대조",
+          "cite": "Lodén 1996",
+          "source_id": "10.1007/BF02505052",
+          "url": "https://doi.org/10.1007/BF02505052",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "licorice_extract",
+      "name_kr": "유용성감초추출물",
+      "inci": "Glycyrrhiza Glabra Root Extract",
+      "claims": [
+        {
+          "edge_id": 64,
+          "effect_id": "brightening",
+          "effect_name": "미백",
+          "source_type": "고시",
+          "claim": "미백에 도움",
+          "at": "2. 피부의 미백에 도움을 주는 제품의 성분 및 함량 — 유용성감초추출물 0.05%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "isoamyl_p_methoxycinnamate",
+      "name_kr": "이소아밀p-메톡시신나메이트",
+      "inci": "Isoamyl p-Methoxycinnamate",
+      "claims": [
+        {
+          "edge_id": 7667,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 이소아밀p-메톡시신나메이트 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "zinc_oxide",
+      "name_kr": "징크옥사이드",
+      "inci": "Zinc Oxide",
+      "claims": [
+        {
+          "edge_id": 151,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 징크옥사이드 25%(자외선차단성분으로서)",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "caffeine",
+      "name_kr": "카페인",
+      "inci": "Caffeine",
+      "claims": [
+        {
+          "edge_id": 7621,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "남성 피부에서 경표피수분손실 감소",
+          "at": "Brandner JM, Behne MJ, Huesing B, Moll I. Int J Cosmet Sci. 2006;28(5):343-347 — 0.5% 카페인 함유 HEC 겔을 한쪽 전완부에, 무카페인 HEC 겔을 반대쪽에 7일 도포하니 남성 참가자에서만 경표피수분손실이 유의하게 감소(여성에서는 그 효과가 없음) — 남성 피부에 한정된 결과",
+          "population": "사람 남성(정확한 인원수 확인 못 함) 좌우 전완부 대조 7일 도포 시험",
+          "cite": "Brandner 2006",
+          "source_id": "PMID:18489298",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18489298/",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": [
+        {
+          "code": "FRAGRANCE",
+          "label": "향 부여제",
+          "description": "향이나 맛을 부여하고 기분 좋은 냄새를 내거나 불쾌한 냄새를 가리는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32304",
+          "source_as_of": null
+        },
+        {
+          "code": "SKIN CONDITIONING",
+          "label": "피부 컨디셔닝제",
+          "description": "피부를 양호한 상태로 유지하기 위한 포괄적 원료 용도 분류입니다. 보습·진정 등 개별 임상 효능을 뜻하지 않습니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32304",
+          "source_as_of": null
+        },
+        {
+          "code": "PERFUMING",
+          "label": "착향제",
+          "description": "향수 및 방향성 원료로 사용하는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32304",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "terephthalylidene_dicamphor_sulfonic_acid",
+      "name_kr": "테레프탈릴리덴디캠퍼설포닉애씨드",
+      "inci": "Terephthalylidene Dicamphor Sulfonic Acid",
+      "claims": [
+        {
+          "edge_id": 7669,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 테레프탈릴리덴디캠퍼설포닉애씨드 및 그 염류 산으로 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "trehalose",
+      "name_kr": "트레할로스",
+      "inci": "Trehalose",
+      "claims": [
+        {
+          "edge_id": 7602,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "각질층 수분량 증가",
+          "at": "Czajkowska-Kośnik A, et al. Cosmetics. 2026;13(4):196 — 트레할로스 함유 에멀전이 4주 도포 후 위약 대비 각질층 수분량 최대 102% 증가·경표피수분손실 최대 33% 감소",
+          "population": "사람 7명 4주 도포 시험",
+          "cite": "Czajkowska-Kośnik 2026",
+          "source_id": "10.3390/cosmetics13040196",
+          "url": "https://doi.org/10.3390/cosmetics13040196",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "titanium_dioxide",
+      "name_kr": "티타늄디옥사이드",
+      "inci": "Titanium Dioxide",
+      "claims": [
+        {
+          "edge_id": 154,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 티타늄디옥사이드 25%(자외선차단성분으로서)",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "panthenol",
+      "name_kr": "판테놀",
+      "inci": "Panthenol",
+      "claims": [
+        {
+          "edge_id": 7618,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "경표피수분손실 감소",
+          "at": "Camargo FB Jr, Gaspar LR, Maia Campos PMBG. J Cosmet Sci. 2011;62(4):361-370 — 1.0%·5.0% 판테놀(D-판테놀) 함유 제형을 팔뚝에 30일 도포한 부위의 경표피수분손실이 무판테놀 비히클 대조 대비 유의하게 감소, SLES 세정 2시간 후에도 즉각적 경표피수분손실 감소 효과 확인",
+          "population": "사람 40명(건강한 여성 20~35세) 위약대조 30일 도포 시험",
+          "cite": "Camargo 2011",
+          "source_id": "PMID:21982351",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21982351/",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "phenylbenzimidazole_sulfonic_acid",
+      "name_kr": "페닐벤즈이미다졸설포닉애씨드",
+      "inci": "Phenylbenzimidazole Sulfonic Acid",
+      "claims": [
+        {
+          "edge_id": 7671,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 페닐벤즈이미다졸설포닉애씨드 4%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "petrolatum",
+      "name_kr": "페트롤라툼",
+      "inci": "Petrolatum",
+      "claims": [
+        {
+          "edge_id": 7605,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "장벽손상 후 경표피수분손실 회복 가속",
+          "at": "Ghadially R, Halkier-Sørensen L, Elias PM. J Am Acad Dermatol. 1992;26(3 Pt 2):387-396 — 아세톤으로 장벽을 손상시킨 사람 피부에 페트롤라툼을 도포하면 무처치 대비 경표피수분손실 회복이 가속됨",
+          "population": "사람 5명 아세톤 장벽손상 시험",
+          "cite": "Ghadially 1992",
+          "source_id": "PMID:1564142",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/1564142/",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "polysilicone_15",
+      "name_kr": "폴리실리콘-15",
+      "inci": "Polysilicone-15",
+      "claims": [
+        {
+          "edge_id": 7673,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 폴리실리콘-15(디메치코디에칠벤잘말로네이트) 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "peg_retinamide",
+      "name_kr": "폴리에톡실레이티드레틴아마이드",
+      "inci": "Polyethoxylated Retinamide",
+      "claims": [
+        {
+          "edge_id": 12,
+          "effect_id": "wrinkle",
+          "effect_name": "주름 개선",
+          "source_type": "고시",
+          "claim": "주름 개선에 도움",
+          "at": "3. 피부의 주름개선에 도움을 주는 제품의 성분 및 함량 — 폴리에톡실레이티드레틴아마이드 0.05~0.2%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "고시 함량"
+        }
+      ],
+      "functions": []
+    },
+    {
+      "id": "propanediol",
+      "name_kr": "프로판다이올",
+      "inci": "Propanediol",
+      "claims": [
+        {
+          "edge_id": 7604,
+          "effect_id": "moisturizing",
+          "effect_name": "보습·장벽",
+          "source_type": "문헌",
+          "claim": "각질층 수분량 증가",
+          "at": "Pinto JR, et al. Int J Cosmet Sci. 2024;46(1):85-95 — 1,3-프로판다이올 도포 15분·2시간·8시간 후 각질층 수분량 증가·경표피수분손실 감소",
+          "population": "사람 30명 무작위 대조",
+          "cite": "Pinto 2024",
+          "source_id": "10.1111/ics.12911",
+          "url": "https://doi.org/10.1111/ics.12911",
+          "source_as_of": null,
+          "condition_label": null
+        }
+      ],
+      "functions": [
+        {
+          "code": "SOLVENT",
+          "label": "용제",
+          "description": "수성 또는 비수성 액체 등으로 화장품의 다른 구성 성분을 녹이는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/58392",
+          "source_as_of": null
+        },
+        {
+          "code": "VISCOSITY CONTROLLING",
+          "label": "점도 조절제",
+          "description": "화장품의 점도를 높이거나 낮추는 용도입니다.",
+          "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/58392",
+          "source_as_of": null
+        }
+      ]
+    },
+    {
+      "id": "homosalate",
+      "name_kr": "호모살레이트",
+      "inci": "Homosalate",
+      "claims": [
+        {
+          "edge_id": 7675,
+          "effect_id": "uv",
+          "effect_name": "자외선 차단",
+          "source_type": "고시",
+          "claim": "자외선 차단",
+          "at": "1. 피부를 곱게 태워주거나 자외선으로부터 피부를 보호하는데 도움을 주는 제품의 성분 및 함량 — 호모살레이트 10%",
+          "population": null,
+          "cite": null,
+          "source_id": "기능성화장품 심사에 관한 규정 [별표 4]",
+          "url": "https://www.law.go.kr/행정규칙/기능성화장품 심사에 관한 규정",
+          "source_as_of": "식품의약품안전처고시 제2025-88호 (2025-12-16)",
+          "condition_label": "최대 배합 한도"
+        }
+      ],
+      "functions": []
+    }
+  ]
+}

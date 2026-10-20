@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+{% if site.cloudflare -%}
+Allow: /
+Sitemap: {{ site.url }}/sitemap.xml
+{%- else -%}
+Disallow: /
+{%- endif %}

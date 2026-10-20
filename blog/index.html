@@ -1,0 +1,35 @@
+---
+layout: blog
+title: 성분 이야기
+description: 화장품 성분의 효능 근거를 식품의약품안전처 고시와 공개 문헌의 원문 조건과 함께 정리했습니다. 피부 고민별로 근거가 있는 성분을 찾아보세요.
+campaign: blog-index
+---
+<article class="blog-article">
+  <h1>성분 이야기</h1>
+  <p class="blog-lede">이 성분은 무엇에 도움이 될까요? 바름이 확인한 고시·문헌 근거를 원문 조건과 함께 옮겼습니다.</p>
+
+  {% if site.posts.size > 0 %}
+  <section aria-labelledby="posts-title">
+    <h2 id="posts-title">읽을거리</h2>
+    <ul class="blog-post-list">
+      {% for post in site.posts %}<li><a href="{{ post.url | relative_url }}"><strong>{{ post.title }}</strong><small>{{ post.description }}</small></a></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section aria-labelledby="concerns-title">
+    <h2 id="concerns-title">고민별로 보기</h2>
+    <ul class="blog-concern-grid">
+      {% for c in site.data.blog_concerns %}<li><a href="{{ '/blog/concerns/' | append: c.code | append: '/' | relative_url }}"><strong>{{ c.title }}</strong><small>성분 {{ site.data.blog.effects[c.effect_id].ingredient_ids.size }}개</small></a></li>{% endfor %}
+    </ul>
+  </section>
+
+  <section aria-labelledby="ingredients-title">
+    <h2 id="ingredients-title">성분 가나다순</h2>
+    <ul class="blog-ingredient-index">
+      {% for ingredient in site.data.blog.ingredients %}<li><a href="{{ '/blog/ingredients/' | append: ingredient.id | append: '/' | relative_url }}">{{ ingredient.name_kr }}</a></li>{% endfor %}
+    </ul>
+  </section>
+
+  {% include blog-cta.html campaign=page.campaign %}
+</article>

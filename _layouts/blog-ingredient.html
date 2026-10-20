@@ -1,0 +1,26 @@
+---
+layout: blog
+---
+{% assign ingredient = page.ingredient %}
+<article class="blog-article">
+  <nav class="blog-crumbs" aria-label="위치"><a href="{{ '/blog/' | relative_url }}">성분 이야기</a> <span aria-hidden="true">›</span> 성분</nav>
+  <h1>{{ ingredient.name_kr }}</h1>
+  {% if ingredient.inci %}<p class="blog-inci">{{ ingredient.inci }}</p>{% endif %}
+  <p class="blog-lede">바름이 확인한 {{ ingredient.name_kr }}의 효능 근거입니다. 고시·문헌 원문의 조건을 그대로 옮겼습니다.</p>
+
+  <section aria-labelledby="claims-title">
+    <h2 id="claims-title">효능 근거</h2>
+    {% for claim in ingredient.claims %}{% include blog-claim.html claim=claim %}{% endfor %}
+  </section>
+
+  {% if ingredient.functions.size > 0 %}
+  <section aria-labelledby="functions-title">
+    <h2 id="functions-title">배합 목적</h2>
+    <ul class="blog-functions">
+      {% for f in ingredient.functions %}<li><strong>{{ f.label }}</strong>{% if f.description %} — {{ f.description }}{% endif %} <a href="{{ f.source_url | escape }}" target="_blank" rel="noopener">출처</a></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% include blog-cta.html campaign=page.campaign ingredient_name=ingredient.name_kr %}
+</article>
