@@ -73,6 +73,24 @@ for (const file of pages) {
   }
 }
 
+// 대표 글: 고민마다 1편
+const POST_FORBIDDEN = /최고|가장 좋|치료|여드름|비듬|기미/;
+for (const concern of concerns) {
+  const file = join(blogDir, concern.code, "index.html");
+  if (!existsSync(file)) {
+    fail(`대표 글 없음: /blog/${concern.code}/`);
+    continue;
+  }
+  const html = readFileSync(file, "utf8");
+  if (!/"@type":\s*"(Article|BlogPosting)"/.test(html)) fail(`/blog/${concern.code}/: Article JSON-LD 없음`);
+  if (!html.includes('href="/blog/ingredients/')) fail(`/blog/${concern.code}/: 성분 페이지 링크 없음`);
+  if (!html.includes(`href="/blog/concerns/${concern.code}/"`)) fail(`/blog/${concern.code}/: 고민 페이지 링크 없음`);
+  const body = html.match(/<div class="blog-post-body">([\s\S]*?)<\/div>/)?.[1] ?? "";
+  if (!body) fail(`/blog/${concern.code}/: 본문 없음`);
+  const word = body.match(POST_FORBIDDEN);
+  if (word) fail(`/blog/${concern.code}/: 금지 표현 "${word[0]}"`);
+}
+
 // 사이트맵: 모든 블로그 페이지 URL
 const sitemapPath = join(site, "sitemap.xml");
 const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "";

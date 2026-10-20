@@ -17,8 +17,15 @@ exclude:
   - vendor
   - scripts
   - docs
+permalink: /blog/:title/
 defaults:
   - scope:
       path: ""
     values:
       layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: blog-post
+      campaign: blog-post

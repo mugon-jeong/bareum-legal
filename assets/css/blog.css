@@ -212,3 +212,18 @@
     gap: 2px;
   }
 }
+.blog-post-body {
+  margin-top: 28px;
+  font-size: 17px;
+}
+.blog-post-body p {
+  margin: 0 0 18px;
+}
+.blog-post-body a {
+  color: var(--green);
+  font-weight: 600;
+}
+.blog-post-body ul {
+  padding-left: 20px;
+  margin: 0 0 18px;
+}
