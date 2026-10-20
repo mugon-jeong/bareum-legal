@@ -73,6 +73,17 @@ for (const file of pages) {
   }
 }
 
+// 사이트맵: 모든 블로그 페이지 URL
+const sitemapPath = join(site, "sitemap.xml");
+const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "";
+if (!sitemap) fail("sitemap.xml 없음");
+for (const file of pages) {
+  const url = `https://bareum.app/${relative(site, file).replace(/index\.html$/, "")}`;
+  if (!sitemap.includes(`<loc>${url}</loc>`)) fail(`sitemap 에 없음: ${url}`);
+}
+const landing = readFileSync(join(site, "index.html"), "utf8");
+if (!landing.includes('href="/blog/"')) fail("랜딩에 /blog/ 링크 없음");
+
 if (failures.length) {
   for (const message of failures) console.error(`✖ ${message}`);
   console.error(`blog check failed: ${failures.length}`);

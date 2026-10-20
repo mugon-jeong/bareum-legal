@@ -1,0 +1,16 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages %}
+{%- assign last = p.url | slice: -1, 1 %}
+{%- unless last == "/" %}{% continue %}{% endunless %}
+{%- if p.url contains "/consent/" or p.url contains "/privacy/20" %}{% continue %}{% endif %}
+  <url><loc>{{ site.url }}{{ p.url }}</loc></url>
+{%- endfor %}
+{%- for post in site.posts %}
+  <url><loc>{{ site.url }}{{ post.url }}</loc><lastmod>{{ post.date | date_to_xmlschema }}</lastmod></url>
+{%- endfor %}
+</urlset>
