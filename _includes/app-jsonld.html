@@ -1,0 +1,18 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "바름(BAREUM)",
+  "alternateName": "바름: 올바른 스킨케어",
+  "description": {{ site.description | jsonify }},
+  "url": "{{ site.url }}/",
+  "image": "{{ site.url }}/assets/images/app-icon.webp",
+  "operatingSystem": "iOS 18.0 이상",
+  "applicationCategory": "LifestyleApplication",
+  "inLanguage": "ko",
+  "installUrl": "https://apps.apple.com/app/apple-store/id6807600225?pt=129394063&ct=landing-jsonld&mt=8",
+  "sameAs": [{{ site.app_store_url | jsonify }}],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "publisher": { "@type": "Organization", "name": "바름(BAREUM)", "url": "{{ site.url }}/" }
+}
+</script>

@@ -1,0 +1,51 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# 바름(BAREUM)
+
+> 가진 화장품을 선반에 담으면 아침·저녁 바르는 순서를 계산해 주는 한국어 iOS 앱. 순서는 성분과 제형을 기준으로 서버의 규칙 엔진이 계산하며, 광고나 제품 추천으로 순서가 바뀌지 않는다.
+
+- App Store: https://apps.apple.com/app/apple-store/id6807600225?pt=129394063&ct=llms&mt=8
+- 가격: App Store 무료 다운로드
+- 기기: iPhone(iOS 18.0 이상), Apple Watch. AI 기능은 iOS 26 이상·Apple Intelligence 지원 iPhone에서 기기 안에서 동작한다
+- 언어: 한국어
+
+## 앱이 하는 일
+
+- 순서: 선반에 담은 제품으로 아침·저녁 순서를 만들고, 단계마다 그 자리인 이유와 다음 단계까지의 대기시간을 보여준다
+- 주의사항: 함께 쓰기 어려운 조합과 주의사항을 이유와 함께 보여준다
+- 선반: 성분표를 촬영하거나 바코드를 비춰 제품을 담는다. 성분 인식은 기기 안에서 먼저 처리하고, 못 읽은 성분은 직접 고친다
+- AI 루틴: 건조함·피부 미백·주름 중 고민을 고르면, 보유 제품의 성분 근거를 보고 사용자가 성분·제품을 직접 골라 루틴을 구성한다
+- 기록: 바른 날을 달력과 연속 기록으로 남기고, 위젯·실시간 현황·Apple Watch에서 루틴을 이어간다
+
+## 바름이 하지 않는 일
+
+- 화장품 제품을 추천하거나 순위를 매기지 않는다
+- 제품 효능을 주장하지 않는다. 효능 근거는 성분에만 연결하고 고시·문헌 출처를 함께 보여준다
+- 처방약은 선반에 담지 않는다
+
+## 성분 근거 공개 페이지
+
+바름이 앱에서 쓰는 성분 근거 일부를 웹에 공개한다. 식품의약품안전처 「기능성화장품 심사에 관한 규정」 고시와 사람 피부 대상 문헌을 원문 조건과 함께 옮겼다. 데이터 기준 시점: {{ site.data.blog.as_of | slice: 0, 10 }}
+
+### 고민별 성분
+{% for c in site.data.blog_concerns %}
+- [{{ c.title }}]({{ site.url }}/blog/concerns/{{ c.code }}/): {{ site.data.blog.effects[c.effect_id].ingredient_ids.size }}가지 성분
+{%- endfor %}
+
+### 글
+{% for post in site.posts %}
+- [{{ post.title }}]({{ site.url }}{{ post.url }}): {{ post.description }}
+{%- endfor %}
+
+### 성분
+{% assign ingredients = site.data.blog.ingredients | sort: "name_kr" %}
+{%- for i in ingredients %}
+- [{{ i.name_kr }}{% if i.inci %} ({{ i.inci }}){% endif %}]({{ site.url }}/blog/ingredients/{{ i.id }}/)
+{%- endfor %}
+
+## 기타
+
+- 고객지원: {{ site.url }}/support/
+- 개인정보처리방침: {{ site.url }}/privacy/
