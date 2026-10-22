@@ -79,6 +79,14 @@ const today = new Date().toISOString().slice(0, 10);
 const postSlugs = (existsSync(join(root, "_posts")) ? readdirSync(join(root, "_posts")) : [])
   .filter((name) => name.endsWith(".md") && name.slice(0, 10) <= today)
   .map((name) => name.slice(11, -3));
+// permalink 가 /blog/:title/ 이라 날짜가 달라도 slug 가 같으면 한 글이 다른 글을 덮는다. 예약 글도 포함한다
+const slugFiles = new Map();
+for (const name of existsSync(join(root, "_posts")) ? readdirSync(join(root, "_posts")) : []) {
+  if (!name.endsWith(".md")) continue;
+  const slug = name.slice(11, -3);
+  slugFiles.set(slug, [...(slugFiles.get(slug) ?? []), name]);
+}
+for (const [slug, names] of slugFiles) if (names.length > 1) fail(`같은 주소 /blog/${slug}/ 를 쓰는 글: ${names.join(", ")}`);
 for (const concern of concerns) if (!postSlugs.includes(concern.code)) fail(`대표 글 없음: /blog/${concern.code}/`);
 for (const slug of postSlugs) {
   const file = join(blogDir, slug, "index.html");
@@ -119,6 +127,8 @@ for (const concern of concerns) {
 const sitemapPath = join(site, "sitemap.xml");
 const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "";
 if (!sitemap) fail("sitemap.xml 없음");
+const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(([, loc]) => loc);
+for (const loc of new Set(locs.filter((loc, i) => locs.indexOf(loc) !== i))) fail(`sitemap 에 중복 URL: ${loc}`);
 for (const file of pages) {
   const url = `https://bareum.app/${relative(site, file).replace(/index\.html$/, "")}`;
   if (!sitemap.includes(`<loc>${url}</loc>`)) fail(`sitemap 에 없음: ${url}`);
