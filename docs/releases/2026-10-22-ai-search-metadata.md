@@ -9,6 +9,8 @@ AI 검색이 바름을 앱으로 파악하도록 기계가 읽는 요약을 추�
 - 운영 확인: `/llms.txt` 200 `text/plain`, 랜딩 JSON-LD `WebSite`·`MobileApplication` 파싱 성공, `/`·`/blog/`·`/sitemap.xml` 200.
 - 같은 날 Cloudflare bot 설정을 읽어 AI 크롤러 차단·Bot Fight Mode가 모두 꺼져 있고 WAF 규칙이 없음을 확인했다(변경 없음).
 
-## 남은 일
+## 랜딩 버전 문구 정리
 
-- 랜딩 본문의 「1.0.3 심사 중」 문구가 현재 버전(1.0.5)과 맞지 않는다.
+같은 날 랜딩의 「1.0.3 심사 중」 문구를 고쳤다. iPhone Duo 지원은 1.0.3부터 출시됐다(1.0.4가 2026-10-19 `READY_FOR_SALE`, 바름 저장소 `docs/releases/2026-10-19-build67.md`). 상단 1.0.3 심사 안내 문단을 지우고, Duo 절 라벨을 「iPhone Duo 지원」으로, 설명을 「1.0.3부터 제공」으로, 메타 description을 「화장대 모드도 지원합니다」로 바꿨다.
+
+- Version ID `3813d250-5f11-4883-aff8-b6784f597290`. 배포 전 `pnpm check:blog` 60 pages 통과, 운영 랜딩 200·「심사 중」 0건.
