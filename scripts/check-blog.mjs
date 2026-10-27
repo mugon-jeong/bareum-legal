@@ -105,6 +105,17 @@ for (const slug of postSlugs) {
   if (word) fail(`/blog/${slug}/: 금지 표현 "${word[0]}"`);
 }
 
+// 제목·description 은 Liquid 가 먹지 않아 개수를 쓰면 스냅숏이 바뀔 때 틀어진다
+const FRONT_COUNT = /(\d+|한|두|세|네|다섯|여섯|일곱|여덟|아홉|열) ?(가지|개 성분|종)/;
+for (const name of existsSync(join(root, "_posts")) ? readdirSync(join(root, "_posts")) : []) {
+  if (!name.endsWith(".md")) continue;
+  const front = readFileSync(join(root, "_posts", name), "utf8").match(/^---\n([\s\S]*?)\n---/)?.[1] ?? "";
+  for (const line of front.split("\n").filter((l) => /^(title|description):/.test(l))) {
+    const count = line.match(FRONT_COUNT);
+    if (count) fail(`${name}: front matter 에 개수 "${count[0]}" — 본문에서 Liquid 로 쓰거나 빼라`);
+  }
+}
+
 // 대표 글의 수치는 스냅숏 근거와 같아야 한다
 const ingredientsById = new Map(snapshot.ingredients.map((i) => [i.id, i]));
 const postsDir = join(root, "_posts");
