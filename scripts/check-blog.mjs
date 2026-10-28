@@ -87,6 +87,11 @@ for (const name of existsSync(join(root, "_posts")) ? readdirSync(join(root, "_p
   slugFiles.set(slug, [...(slugFiles.get(slug) ?? []), name]);
 }
 for (const [slug, names] of slugFiles) if (names.length > 1) fail(`같은 주소 /blog/${slug}/ 를 쓰는 글: ${names.join(", ")}`);
+// 순서 근거 글(설계 §5.8): 성분 링크 대신 front matter references 의 DOI 로만 외부 문헌을 인용한다
+const frontOf = (slug) => {
+  const name = slugFiles.get(slug)?.[0];
+  return name ? (readFileSync(join(root, "_posts", name), "utf8").match(/^---\n([\s\S]*?)\n---/)?.[1] ?? "") : "";
+};
 for (const concern of concerns) if (!postSlugs.includes(concern.code)) fail(`대표 글 없음: /blog/${concern.code}/`);
 for (const slug of postSlugs) {
   const file = join(blogDir, slug, "index.html");
@@ -96,11 +101,22 @@ for (const slug of postSlugs) {
   }
   const html = readFileSync(file, "utf8");
   if (!/"@type":\s*"(Article|BlogPosting)"/.test(html)) fail(`/blog/${slug}/: Article JSON-LD 없음`);
-  if (!html.includes('href="/blog/ingredients/')) fail(`/blog/${slug}/: 성분 페이지 링크 없음`);
+  const front = frontOf(slug);
+  const isOrder = /^kind:\s*order\s*$/m.test(front);
+  if (!isOrder && !html.includes('href="/blog/ingredients/')) fail(`/blog/${slug}/: 성분 페이지 링크 없음`);
   const concern = concerns.find((c) => c.code === slug);
   if (concern && !html.includes(`href="/blog/concerns/${concern.code}/"`)) fail(`/blog/${slug}/: 고민 페이지 링크 없음`);
   const body = html.match(/<div class="blog-post-body">([\s\S]*?)<\/div>/)?.[1] ?? "";
   if (!body) fail(`/blog/${slug}/: 본문 없음`);
+  if (isOrder) {
+    const dois = [...front.matchAll(/^\s*-?\s*doi:\s*"?([^"\s]+)"?\s*$/gm)].map((m) => m[1]);
+    if (dois.length === 0) fail(`/blog/${slug}/: kind: order 인데 references 의 doi 없음`);
+    for (const doi of dois) if (!body.includes(`href="https://doi.org/${doi}"`)) fail(`/blog/${slug}/: 본문에 DOI 링크 없음 ${doi}`);
+    for (const [, href] of body.matchAll(/href="(https?:\/\/[^"]+)"/g)) {
+      const doi = href.match(/^https:\/\/doi\.org\/(.+)$/)?.[1];
+      if (!doi || !dois.includes(doi)) fail(`/blog/${slug}/: references 에 없는 외부 링크 ${href}`);
+    }
+  }
   const word = body.match(POST_FORBIDDEN);
   if (word) fail(`/blog/${slug}/: 금지 표현 "${word[0]}"`);
 }
