@@ -22,5 +22,14 @@ layout: blog
   </section>
   {% endif %}
 
+  {% if page.linking_posts.size > 0 %}
+  <section aria-labelledby="related-title">
+    <h2 id="related-title">관련 글</h2>
+    <ul class="blog-related">
+      {% for post in page.linking_posts %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
   {% include blog-cta.html campaign=page.campaign ingredient_name=ingredient.name_kr %}
 </article>
