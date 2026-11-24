@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-20T07:53:58.791Z",
+  "as_of": "2026-11-24T00:56:48.878Z",
   "effects": {
     "brightening": {
       "name_kr": "미백",
@@ -95,7 +95,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "ha_hydrolyzed",
@@ -117,7 +118,8 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "glycerin",
@@ -139,7 +141,82 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8330,
+          "partners": [
+            {
+              "id": "urea",
+              "name_kr": "우레아",
+              "has_page": true
+            }
+          ],
+          "summary": "글리세린과 우레아를 함께 넣은 수용액의 단기 수분 변화를 한 사람에게 반복 측정한 연구가 있습니다. 이 결과만으로 일반적인 보습 시너지나 별도 제품을 겹쳐 바르는 효과를 판단하기는 어렵습니다.",
+          "study_conditions": [
+            "글리세린 5 wt% + 우레아 5 wt% 수용액",
+            "한 사람의 왼쪽 전완, 날짜를 바꿔 12회 반복",
+            "23°C·50% RH, 30 µL 도포, 3–120분 정전용량 측정"
+          ],
+          "limitations": [
+            "독립 표본은 1명이며 반복 측정을 12명으로 계산하지 않음",
+            "특정 수용액 결과이며 제품 레이어링·임상 안전성·장기 효과·순서·대기시간은 확인하지 않음",
+            "실제 제품의 농도·제형 일치 미확인",
+            "혼합군 총농도 10 wt%와 글리세린 5 wt% 비교는 총농도가 같지 않으며, 두 성분의 상호작용 자체를 분리해 입증하지 않음"
+          ],
+          "cite": "Nonobe, Maeda & Murashima 2023",
+          "url": "https://www.jstage.jst.go.jp/article/sccj/57/4/57_343/_pdf"
+        },
+        {
+          "edge_id": 8332,
+          "partners": [
+            {
+              "id": "dict_97173e582ab0f74003e51bd441355b02",
+              "name_kr": "자일리톨",
+              "has_page": false
+            }
+          ],
+          "summary": "글리세린과 자일리톨을 함께 넣은 특정 젤을 12명에게 2주간 사용하며 피부 수분과 수분 손실을 측정한 연구가 있습니다. 각 성분 단독과 비교하지 않아 시너지나 별도 제품을 겹쳐 바르는 효과를 판단할 수는 없습니다.",
+          "study_conditions": [
+            "글리세린 5% + 자일리톨 5%, Carbopol Ultrez 10 0.4% 수성 젤",
+            "건조 피부 경향의 50–60세 12명, 위팔에 하루 2회·14일",
+            "동일인의 무처치·기제 부위와 비교, 마지막 도포 6시간 후 측정"
+          ],
+          "limitations": [
+            "각 성분 단독군이 없어 상호작용·시너지 입증 불가",
+            "작은 표본이며 부위 무작위 배정·평가자 눈가림은 명시되지 않음",
+            "기제보다 통계적으로 우수하다는 결론이나 안전성 보장으로 확대하지 않음",
+            "저자 1명이 해당 조합 제형의 특허 소유자",
+            "실제 제품의 농도·제형 일치 및 별도 제품 레이어링·순서·대기시간 미확인"
+          ],
+          "cite": "Korponyai et al. 2017",
+          "url": "https://www.medicaljournals.se/acta/content/html/10.2340/00015555-2493"
+        },
+        {
+          "edge_id": 8343,
+          "partners": [
+            {
+              "id": "ascorbic_acid",
+              "name_kr": "아스코빅애씨드",
+              "has_page": false
+            }
+          ],
+          "summary": "비인체 크림 안정성 시험에서 글리세린을 보습제로 쓴 배합은 비교 보습제 배합보다 비타민 C의 분해가 느리게 관찰됐습니다. 실험용 자외선 조건의 결과로 피부 효과나 완제품 안정성을 보장하지 않습니다.",
+          "study_conditions": [
+            "아스코빅애씨드 2%·보습제 5%, 지방산 유화제 12%·세틸알코올 3%·KOH 1% O/W 크림",
+            "글리세린·프로필렌글라이콜·에틸렌글라이콜과 지방산 3종의 9개 배합 비교, pH 4–7",
+            "254 nm UVC, 25±1°C·RH60%, 1 mm 층; 암소 보관 실험도 별도 수행"
+          ],
+          "limitations": [
+            "점도·유화제·pH 등 배합 의존적이며 두 성분만 섞은 비교가 아님",
+            "UVC는 일상 태양광 노출과 다름; 피부 보호·레이어링 시너지로 해석 불가",
+            "독립 배치 n·군간 추론통계 미기재; 속도상수·분석 재현성과 구분",
+            "실제 제품의 배합·pH·점도 미확인; 사용법·제조법 권고 아님"
+          ],
+          "cite": "Ahmad et al. 2011",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3167265/"
+        }
+      ]
     },
     {
       "id": "niacinamide",
@@ -161,7 +238,56 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8331,
+          "partners": [
+            {
+              "id": "dict_59d05f8205e9587ad1c42efec8d51f05",
+              "name_kr": "아세틸글루코사민",
+              "has_page": false
+            }
+          ],
+          "summary": "나이아신아마이드와 아세틸글루코사민을 함께 넣은 특정 제형은 나이아신아마이드 단독 제형과 비교해 일부 평가에서만 차이를 보였습니다. 별도 제품을 겹쳐 바르는 효과를 확인한 연구는 아닙니다.",
+          "study_conditions": [
+            "나이아신아마이드 4% + NAG 2%와 나이아신아마이드 4% 비교",
+            "35–65세 여성, 기본 split-face 비교 35명; 다른 실험군의 대조 피험자도 통계에 포함",
+            "2주 준비 후 8주, 하루 2회 동일 연구 제형 사용"
+          ],
+          "limitations": [
+            "8주 컴퓨터 평가 P=.043, 전문가 평가 P=.151로 결과가 일관되지 않음",
+            "전체 INCI·pH 미기재; 단독 NAG 실험과 병용 실험을 구분",
+            "제조사 직원 연구이며 독립 재현·실제 제품 조건·레이어링 결과 미확인",
+            "단일성분 군과 병용군의 차이가 곧 두 성분의 상승작용을 입증하는 것은 아님; 동일 시험 내 NAG 단독군을 포함한 상호작용 검정 미확인"
+          ],
+          "cite": "Bissett et al. 2007",
+          "url": "https://doi.org/10.1111/j.1473-2165.2007.00295.x"
+        },
+        {
+          "edge_id": 8337,
+          "partners": [
+            {
+              "id": "dict_69e6a2f6f8fa641ce262c5ae36610b15",
+              "name_kr": "헥실레조시놀",
+              "has_page": false
+            }
+          ],
+          "summary": "나이아신아마이드에 헥실레조시놀을 함께 넣은 시험 제형에서, 나이아신아마이드만 넣은 대조 제형보다 색소 반점의 밝기 변화가 크게 관찰됐습니다. 특정 제형의 소규모 시험 결과입니다.",
+          "study_conditions": [
+            "중국 여성 50명 등록·44명 완료, 무작위 이중눈가림 반얼굴 비교 12주",
+            "나이아신아마이드 3% ± 헥실레조시놀 0.4%; 각 반얼굴 약 0.3 g, 하루 2회",
+            "양쪽 동일 기제에 글리세린·글라이콜릭애씨드·자외선필터 등 포함; 색소 반점 L* 측정"
+          ],
+          "limitations": [
+            "헥실레조시놀 단독 임상군이 없어 두 성분의 임상 시너지를 입증하지 못함",
+            "다른 활성 성분도 들어 있는 동일 기제 비교이며 전체 배합비·pH는 미기재",
+            "특정 연령·성별·계절·12주에 한정; 실제 제품 농도·제형·별도 제품 병용 효과 미확인"
+          ],
+          "cite": "Shariff et al. 2022",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9305876/"
+        }
+      ]
     },
     {
       "id": "broussonetia_extract",
@@ -183,7 +309,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "dexpanthenol",
@@ -205,7 +332,8 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "drometrizole",
@@ -235,7 +363,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/33741",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "drometrizole_trisiloxane",
@@ -257,7 +386,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "digalloyl_trioleate",
@@ -279,7 +409,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "disodium_phenyl_dibenzimidazole_tetrasulfonate",
@@ -301,7 +432,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "diethylamino_hydroxybenzoyl_hexyl_benzoate",
@@ -323,7 +455,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "diethylhexyl_butamido_triazone",
@@ -345,7 +478,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "retinol",
@@ -367,7 +501,60 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8347,
+          "partners": [
+            {
+              "id": "panthenol",
+              "name_kr": "판테놀",
+              "has_page": true
+            }
+          ],
+          "summary": "레티놀에 판테놀을 넣은 세럼의 소규모 패치 시험에서, 레티놀 세럼만 사용한 대조 조건보다 홍반 기반 자극 지표가 낮게 관찰됐습니다. 특정 농도와 시험 조건에 한정된 결과입니다.",
+          "study_conditions": [
+            "중국 건강한 성인 21명(21–35세), 무작위 이중눈가림 기제 대조 패치 시험",
+            "레티놀 0.1% 세럼을 공통 기제로 각 첨가 성분을 개별 시험",
+            "첫 패치 48시간·둘째 72시간 후 제거; 각각 2회·4회 홍반 관찰, CEA 기반 MCII 평가",
+            "레티놀 0.1% + 판테놀 2% 대 레티놀 0.1% 기제"
+          ],
+          "limitations": [
+            "소규모 단기 패치 시험으로 일상 장기 사용·다른 레티노이드·별도 제품 병용에 일반화 불가",
+            "첨가 성분 단독군이 없어 임상 시너지 판단 불가",
+            "전체 기제·pH·독립 검정 방법·다중비교 보정은 본문에 미기재",
+            "실제 제품의 농도·기제·시험 조건 미확인; 안전성 보장·사용 농도 권고 아님"
+          ],
+          "cite": "Ye et al. 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494960/"
+        },
+        {
+          "edge_id": 8348,
+          "partners": [
+            {
+              "id": "dict_bb329d6c808db02424fff2b8c1fb2559",
+              "name_kr": "엑토인",
+              "has_page": false
+            }
+          ],
+          "summary": "레티놀에 엑토인을 넣은 세럼을 평가한 소규모 패치 시험이 있습니다. 자극 지표가 수치상 낮았지만 통계적으로 유의한 차이는 확인되지 않아, 자극 완화 효과를 입증한 결과는 아닙니다.",
+          "study_conditions": [
+            "중국 건강한 성인 21명(21–35세), 무작위 이중눈가림 기제 대조 패치 시험",
+            "레티놀 0.1% 세럼을 공통 기제로 각 첨가 성분을 개별 시험",
+            "첫 패치 48시간·둘째 72시간 후 제거; 각각 2회·4회 홍반 관찰, CEA 기반 MCII 평가",
+            "레티놀 0.1% + 엑토인 0.5% 대 레티놀 0.1% 기제"
+          ],
+          "limitations": [
+            "소규모 단기 패치 시험으로 일상 장기 사용·다른 레티노이드·별도 제품 병용에 일반화 불가",
+            "첨가 성분 단독군이 없어 임상 시너지 판단 불가",
+            "전체 기제·pH·독립 검정 방법·다중비교 보정은 본문에 미기재",
+            "실제 제품의 농도·기제·시험 조건 미확인; 안전성 보장·사용 농도 권고 아님",
+            "군간 차이가 유의하지 않으며 효과 동등성·상극·안전성의 증명도 아님"
+          ],
+          "cite": "Ye et al. 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494960/"
+        }
+      ]
     },
     {
       "id": "retinyl_palmitate",
@@ -389,7 +576,38 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8342,
+          "partners": [
+            {
+              "id": "ascorbyl_tip",
+              "name_kr": "아스코빌테트라이소팔미테이트",
+              "has_page": true
+            },
+            {
+              "id": "dict_f52ce21f5d35c6f85ea0af7a59f4d0e6",
+              "name_kr": "토코페릴아세테이트",
+              "has_page": false
+            }
+          ],
+          "summary": "레티닐팔미테이트·아스코빌테트라이소팔미테이트·토코페릴아세테이트를 함께 넣은 실험 제형에서 각 유도체의 분해 속도가 단독 첨가 제형보다 낮게 관찰됐습니다. 피부 효과를 평가한 연구는 아닙니다.",
+          "study_conditions": [
+            "각 유도체 1%씩 넣은 겔크림 대 각 1% 단독 첨가 제형",
+            "아크릴레이트 크로스폴리머·실리콘·글리세린·BHT 등을 포함한 동일 기제",
+            "PVC 용기, 25/37/45°C·상대습도 75%, 최대 189일 HPLC·유동성 관찰"
+          ],
+          "limitations": [
+            "유도체 세 종류의 조합 결과이며 순수 레티놀·아스코빅애씨드·토코페롤로 대체 해석 불가",
+            "혼합군 총 첨가량이 3배여서 기전·시너지를 분리하지 못함",
+            "독립 제조 배치 수와 군간 추론통계 미기재; 분석법 반복 수와 구분",
+            "모델로 추정한 유지기간은 제품 유통기한이 아님; 실제 제품 pH·배합·용기 조건 미확인"
+          ],
+          "cite": "Gianeti et al. 2012",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6268122/"
+        }
+      ]
     },
     {
       "id": "map",
@@ -411,7 +629,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "methylene_bis_benzotriazolyl_tetramethylbutylphenol",
@@ -433,7 +652,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "menthyl_anthranilate",
@@ -463,7 +683,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/78158",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "mineral_oil",
@@ -485,7 +706,8 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "betaine",
@@ -529,7 +751,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/74520",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "benzophenone_3",
@@ -551,7 +774,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "benzophenone_4",
@@ -588,7 +812,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32143",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "benzophenone_8",
@@ -618,7 +843,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32147",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "bmdbm",
@@ -640,7 +866,170 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8333,
+          "partners": [
+            {
+              "id": "ehmc",
+              "name_kr": "에칠헥실메톡시신나메이트",
+              "has_page": true
+            },
+            {
+              "id": "ferulic_acid",
+              "name_kr": "페룰릭애씨드",
+              "has_page": false
+            }
+          ],
+          "summary": "두 자외선차단 성분과 페룰릭애씨드을 함께 넣은 특정 제형을 실험실에서 비교한 연구가 있습니다. 자외선 조사 후 차단 지표가 감소해, 이 첨가만으로 빛에 대한 안정성이 개선됐다고 판단할 수는 없습니다.",
+          "study_conditions": [
+            "부틸메톡시디벤조일메탄 5% + 에칠헥실메톡시신나메이트 10% + 페룰릭애씨드 1% O/W 유화 제형",
+            "같은 기제의 두 자외선차단 성분 제형과 비교; PMMA 판에 1.3 mg/cm² 도포",
+            "실험실 자외선 320–400 nm, 85.68 kJ/m² 조사 전후 평가; 제조 48시간 및 90일 보관 시점"
+          ],
+          "limitations": [
+            "사람 대상 차단 효과·안전성·별도 제품 레이어링을 시험한 결과가 아님",
+            "실험실 차단 지표와 보관 안정성을 구분하며, 일반 제품의 광안정성이나 상극을 단정하지 않음",
+            "판 3개·지점별 반복 측정; 독립 제조 배치 수와 제형 pH는 명시되지 않음",
+            "실제 제품의 농도·기제·다른 안정화 성분과 일치하는지 미확인",
+            "항산화제 두 종류는 각각 시험했으며 함께 넣은 군은 없음"
+          ],
+          "cite": "Freire et al. 2023",
+          "url": "https://www.scielo.br/j/bjps/a/37ZPwGfmGjJKxyc6qgdG7tD/?format=pdf"
+        },
+        {
+          "edge_id": 8334,
+          "partners": [
+            {
+              "id": "ehmc",
+              "name_kr": "에칠헥실메톡시신나메이트",
+              "has_page": true
+            },
+            {
+              "id": "resveratrol",
+              "name_kr": "레스베라트롤",
+              "has_page": false
+            }
+          ],
+          "summary": "두 자외선차단 성분과 레스베라트롤을 함께 넣은 특정 제형을 실험실에서 비교한 연구가 있습니다. 자외선 조사 후 차단 지표가 감소해, 이 첨가만으로 빛에 대한 안정성이 개선됐다고 판단할 수는 없습니다.",
+          "study_conditions": [
+            "부틸메톡시디벤조일메탄 5% + 에칠헥실메톡시신나메이트 10% + 레스베라트롤 3% O/W 유화 제형",
+            "같은 기제의 두 자외선차단 성분 제형과 비교; PMMA 판에 1.3 mg/cm² 도포",
+            "실험실 자외선 320–400 nm, 85.68 kJ/m² 조사 전후 평가; 제조 48시간 및 90일 보관 시점"
+          ],
+          "limitations": [
+            "사람 대상 차단 효과·안전성·별도 제품 레이어링을 시험한 결과가 아님",
+            "실험실 차단 지표와 보관 안정성을 구분하며, 일반 제품의 광안정성이나 상극을 단정하지 않음",
+            "판 3개·지점별 반복 측정; 독립 제조 배치 수와 제형 pH는 명시되지 않음",
+            "실제 제품의 농도·기제·다른 안정화 성분과 일치하는지 미확인",
+            "항산화제 두 종류는 각각 시험했으며 함께 넣은 군은 없음"
+          ],
+          "cite": "Freire et al. 2023",
+          "url": "https://www.scielo.br/j/bjps/a/37ZPwGfmGjJKxyc6qgdG7tD/?format=pdf"
+        },
+        {
+          "edge_id": 8340,
+          "partners": [
+            {
+              "id": "caffeine",
+              "name_kr": "카페인",
+              "has_page": true
+            },
+            {
+              "id": "ehmc",
+              "name_kr": "에칠헥실메톡시신나메이트",
+              "has_page": true
+            },
+            {
+              "id": "titanium_dioxide",
+              "name_kr": "티타늄디옥사이드",
+              "has_page": true
+            }
+          ],
+          "summary": "세 종류 자외선필터를 넣은 시험 제형에 카페인을 추가했을 때, 소규모 인체 시험의 SPF 측정값이 높게 관찰됐습니다. 다른 제품의 SPF 상승이나 카페인 자체의 자외선 차단 효과를 보장하지 않습니다.",
+          "study_conditions": [
+            "동일 O/W 유화 제형에 카페인 0% 대 2.5% 비교",
+            "에칠헥실메톡시신나메이트 7.5% + 부틸메톡시디벤조일메탄 3% + 티타늄디옥사이드 5% 공통",
+            "SPF 시험 성인 10명·피부형 II/III·2 mg/cm²; 별도 피부 적합성 시험은 12명"
+          ],
+          "limitations": [
+            "필터 3종을 모두 포함한 특정 배합 연구; 각 필터와 카페인의 두 성분 관계로 분할 불가",
+            "Table 3의 대조 SPF 15.49와 본문 15.43 표기가 달라 상승률을 표시하지 않음",
+            "작은 단기 시험이며 광독성 추가 평가가 필요하다고 원문 명시",
+            "실제 제품 배합·SPF·장기 안전성 미확인; 제품에 섞거나 덧발라 SPF를 높이는 사용법 아님"
+          ],
+          "cite": "Rosado et al. 2019",
+          "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00519/full"
+        },
+        {
+          "edge_id": 8349,
+          "partners": [
+            {
+              "id": "octocrylene",
+              "name_kr": "옥토크릴렌",
+              "has_page": true
+            }
+          ],
+          "summary": "아보벤존과 옥토크릴렌의 혼합 용액을 자외선에 노출한 비인체 시험에서, 흡광도 변화는 용매와 평가 방식에 따라 달랐습니다. 두 성분이 함께 들어 있다는 사실만으로 완제품의 광안정성이 좋아진다고 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존:옥토크릴렌 1:3 몰비, 에탄올 또는 아세토니트릴 용액 대 아보벤존 단독",
+            "마이크로몰 농도 범위, 초기 흡광도 0.6–0.8로 조절; 2 mL·광경로 10 mm 석영 큐벳",
+            "AM1.5G 모의태양광 100 mW/cm²; 최대 2시간 관찰, 표1–2는 시간당 최대 흡광 및 UVA 면적 변화"
+          ],
+          "limitations": [
+            "에탄올에서는 뚜렷한 안정화 차이를 확인하지 못함; 아세토니트릴에서는 UVA 면적 감소가 덜했지만 최대 흡광점 차이는 작았음",
+            "정확한 각 시험 농도·pH·아세토니트릴 독립 반복 수·군간 검정은 미기재; 에탄올은 3회 평균",
+            "스펙트럼 중첩·광차폐와 직접 안정화 기전을 분리하지 못함",
+            "보충자료 일부 서술·표 번호가 본문과 불일치하여 본문 표1–2와 그림S8–S9 기준으로 대조",
+            "새로 합성한 공유결합 화합물의 결과를 두 성분 혼합 결과에 포함하지 않음",
+            "희석 용액 실험이며 실제 제품 농도·기제·SPF·피부 안전성·별도 제품 병용 조건 미확인"
+          ],
+          "cite": "Cowden et al. 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10245224/"
+        },
+        {
+          "edge_id": 8350,
+          "partners": [
+            {
+              "id": "zinc_oxide",
+              "name_kr": "징크옥사이드",
+              "has_page": true
+            },
+            {
+              "id": "ethylhexyl_salicylate",
+              "name_kr": "에칠헥실살리실레이트",
+              "has_page": true
+            },
+            {
+              "id": "homosalate",
+              "name_kr": "호모살레이트",
+              "has_page": true
+            },
+            {
+              "id": "octocrylene",
+              "name_kr": "옥토크릴렌",
+              "has_page": true
+            }
+          ],
+          "summary": "네 종류 유기 자외선필터 혼합물에 코팅하지 않은 징크옥사이드를 넣은 비인체 시험에서, 광조사 뒤 UVA 흡광이 더 크게 감소했습니다. 실험용 용매에서 얻은 결과로 완제품의 차단력이나 사람의 안전성을 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존 1.8%·에칠헥실살리실레이트 4%·호모살레이트 7%·옥토크릴렌 5%의 DMSO 혼합물",
+            "혼합물1에 무코팅 징크옥사이드 6% 첨가 대 무첨가; 200–1000 nm 입자와 평균85 nm(<100 nm) 입자를 별도 시험",
+            "3 µL 시료, AM1.5G 모의태양광 104 mW/cm²·120분, 암소 대조; 희석 후 UV–Vis 측정"
+          ],
+          "limitations": [
+            "4종 유기 필터와 입자의 전체 배합 결과이며 아보벤존·징크옥사이드 두 성분만의 시험으로 축약 불가",
+            "실험용 DMSO 용액·현탁액 조건이며 완제품 크림이나 실제 도포 조건이 아님",
+            "코팅된 입자·다른 배합·별도 제품 병용·인체 피부 안전성은 미검증",
+            "흡광도 3회 측정의 변동은 보고됐으나 독립 제조 배치 수·이 광학 비교의 군간 통계는 미기재",
+            "논문 내 제브라피시 독성 결과를 사람의 위해성·사용 금지로 확대하지 않음",
+            "시험의 흡광 기반 계산치는 완제품의 표시 SPF/UVA 성능이 아니며 실제 제품 조건 미확인"
+          ],
+          "cite": "Ginzburg et al. 2021",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8550398/"
+        }
+      ]
     },
     {
       "id": "bis_ethylhexyloxyphenol_methoxyphenyl_triazine",
@@ -662,7 +1051,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "cinoxate",
@@ -684,7 +1074,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "adenosine",
@@ -714,7 +1105,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/31367",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "ascorbyl_glucoside",
@@ -736,7 +1128,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "ascorbyl_tip",
@@ -758,7 +1151,38 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8342,
+          "partners": [
+            {
+              "id": "retinyl_palmitate",
+              "name_kr": "레티닐팔미테이트",
+              "has_page": true
+            },
+            {
+              "id": "dict_f52ce21f5d35c6f85ea0af7a59f4d0e6",
+              "name_kr": "토코페릴아세테이트",
+              "has_page": false
+            }
+          ],
+          "summary": "레티닐팔미테이트·아스코빌테트라이소팔미테이트·토코페릴아세테이트를 함께 넣은 실험 제형에서 각 유도체의 분해 속도가 단독 첨가 제형보다 낮게 관찰됐습니다. 피부 효과를 평가한 연구는 아닙니다.",
+          "study_conditions": [
+            "각 유도체 1%씩 넣은 겔크림 대 각 1% 단독 첨가 제형",
+            "아크릴레이트 크로스폴리머·실리콘·글리세린·BHT 등을 포함한 동일 기제",
+            "PVC 용기, 25/37/45°C·상대습도 75%, 최대 189일 HPLC·유동성 관찰"
+          ],
+          "limitations": [
+            "유도체 세 종류의 조합 결과이며 순수 레티놀·아스코빅애씨드·토코페롤로 대체 해석 불가",
+            "혼합군 총 첨가량이 3배여서 기전·시너지를 분리하지 못함",
+            "독립 제조 배치 수와 군간 추론통계 미기재; 분석법 반복 수와 구분",
+            "모델로 추정한 유지기간은 제품 유통기한이 아님; 실제 제품 pH·배합·용기 조건 미확인"
+          ],
+          "cite": "Gianeti et al. 2012",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6268122/"
+        }
+      ]
     },
     {
       "id": "arbutin",
@@ -780,7 +1204,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "alpha_bisabolol",
@@ -802,7 +1227,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "ethyl_ascorbic_ether",
@@ -824,7 +1250,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "ethylhexyl_dimethyl_paba",
@@ -846,7 +1273,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "ehmc",
@@ -868,7 +1296,103 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8333,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "ferulic_acid",
+              "name_kr": "페룰릭애씨드",
+              "has_page": false
+            }
+          ],
+          "summary": "두 자외선차단 성분과 페룰릭애씨드을 함께 넣은 특정 제형을 실험실에서 비교한 연구가 있습니다. 자외선 조사 후 차단 지표가 감소해, 이 첨가만으로 빛에 대한 안정성이 개선됐다고 판단할 수는 없습니다.",
+          "study_conditions": [
+            "부틸메톡시디벤조일메탄 5% + 에칠헥실메톡시신나메이트 10% + 페룰릭애씨드 1% O/W 유화 제형",
+            "같은 기제의 두 자외선차단 성분 제형과 비교; PMMA 판에 1.3 mg/cm² 도포",
+            "실험실 자외선 320–400 nm, 85.68 kJ/m² 조사 전후 평가; 제조 48시간 및 90일 보관 시점"
+          ],
+          "limitations": [
+            "사람 대상 차단 효과·안전성·별도 제품 레이어링을 시험한 결과가 아님",
+            "실험실 차단 지표와 보관 안정성을 구분하며, 일반 제품의 광안정성이나 상극을 단정하지 않음",
+            "판 3개·지점별 반복 측정; 독립 제조 배치 수와 제형 pH는 명시되지 않음",
+            "실제 제품의 농도·기제·다른 안정화 성분과 일치하는지 미확인",
+            "항산화제 두 종류는 각각 시험했으며 함께 넣은 군은 없음"
+          ],
+          "cite": "Freire et al. 2023",
+          "url": "https://www.scielo.br/j/bjps/a/37ZPwGfmGjJKxyc6qgdG7tD/?format=pdf"
+        },
+        {
+          "edge_id": 8334,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "resveratrol",
+              "name_kr": "레스베라트롤",
+              "has_page": false
+            }
+          ],
+          "summary": "두 자외선차단 성분과 레스베라트롤을 함께 넣은 특정 제형을 실험실에서 비교한 연구가 있습니다. 자외선 조사 후 차단 지표가 감소해, 이 첨가만으로 빛에 대한 안정성이 개선됐다고 판단할 수는 없습니다.",
+          "study_conditions": [
+            "부틸메톡시디벤조일메탄 5% + 에칠헥실메톡시신나메이트 10% + 레스베라트롤 3% O/W 유화 제형",
+            "같은 기제의 두 자외선차단 성분 제형과 비교; PMMA 판에 1.3 mg/cm² 도포",
+            "실험실 자외선 320–400 nm, 85.68 kJ/m² 조사 전후 평가; 제조 48시간 및 90일 보관 시점"
+          ],
+          "limitations": [
+            "사람 대상 차단 효과·안전성·별도 제품 레이어링을 시험한 결과가 아님",
+            "실험실 차단 지표와 보관 안정성을 구분하며, 일반 제품의 광안정성이나 상극을 단정하지 않음",
+            "판 3개·지점별 반복 측정; 독립 제조 배치 수와 제형 pH는 명시되지 않음",
+            "실제 제품의 농도·기제·다른 안정화 성분과 일치하는지 미확인",
+            "항산화제 두 종류는 각각 시험했으며 함께 넣은 군은 없음"
+          ],
+          "cite": "Freire et al. 2023",
+          "url": "https://www.scielo.br/j/bjps/a/37ZPwGfmGjJKxyc6qgdG7tD/?format=pdf"
+        },
+        {
+          "edge_id": 8340,
+          "partners": [
+            {
+              "id": "caffeine",
+              "name_kr": "카페인",
+              "has_page": true
+            },
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "titanium_dioxide",
+              "name_kr": "티타늄디옥사이드",
+              "has_page": true
+            }
+          ],
+          "summary": "세 종류 자외선필터를 넣은 시험 제형에 카페인을 추가했을 때, 소규모 인체 시험의 SPF 측정값이 높게 관찰됐습니다. 다른 제품의 SPF 상승이나 카페인 자체의 자외선 차단 효과를 보장하지 않습니다.",
+          "study_conditions": [
+            "동일 O/W 유화 제형에 카페인 0% 대 2.5% 비교",
+            "에칠헥실메톡시신나메이트 7.5% + 부틸메톡시디벤조일메탄 3% + 티타늄디옥사이드 5% 공통",
+            "SPF 시험 성인 10명·피부형 II/III·2 mg/cm²; 별도 피부 적합성 시험은 12명"
+          ],
+          "limitations": [
+            "필터 3종을 모두 포함한 특정 배합 연구; 각 필터와 카페인의 두 성분 관계로 분할 불가",
+            "Table 3의 대조 SPF 15.49와 본문 15.43 표기가 달라 상승률을 표시하지 않음",
+            "작은 단기 시험이며 광독성 추가 평가가 필요하다고 원문 명시",
+            "실제 제품 배합·SPF·장기 안전성 미확인; 제품에 섞거나 덧발라 SPF를 높이는 사용법 아님"
+          ],
+          "cite": "Rosado et al. 2019",
+          "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00519/full"
+        }
+      ]
     },
     {
       "id": "ethylhexyl_salicylate",
@@ -890,7 +1414,50 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8350,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "zinc_oxide",
+              "name_kr": "징크옥사이드",
+              "has_page": true
+            },
+            {
+              "id": "homosalate",
+              "name_kr": "호모살레이트",
+              "has_page": true
+            },
+            {
+              "id": "octocrylene",
+              "name_kr": "옥토크릴렌",
+              "has_page": true
+            }
+          ],
+          "summary": "네 종류 유기 자외선필터 혼합물에 코팅하지 않은 징크옥사이드를 넣은 비인체 시험에서, 광조사 뒤 UVA 흡광이 더 크게 감소했습니다. 실험용 용매에서 얻은 결과로 완제품의 차단력이나 사람의 안전성을 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존 1.8%·에칠헥실살리실레이트 4%·호모살레이트 7%·옥토크릴렌 5%의 DMSO 혼합물",
+            "혼합물1에 무코팅 징크옥사이드 6% 첨가 대 무첨가; 200–1000 nm 입자와 평균85 nm(<100 nm) 입자를 별도 시험",
+            "3 µL 시료, AM1.5G 모의태양광 104 mW/cm²·120분, 암소 대조; 희석 후 UV–Vis 측정"
+          ],
+          "limitations": [
+            "4종 유기 필터와 입자의 전체 배합 결과이며 아보벤존·징크옥사이드 두 성분만의 시험으로 축약 불가",
+            "실험용 DMSO 용액·현탁액 조건이며 완제품 크림이나 실제 도포 조건이 아님",
+            "코팅된 입자·다른 배합·별도 제품 병용·인체 피부 안전성은 미검증",
+            "흡광도 3회 측정의 변동은 보고됐으나 독립 제조 배치 수·이 광학 비교의 군간 통계는 미기재",
+            "논문 내 제브라피시 독성 결과를 사람의 위해성·사용 금지로 확대하지 않음",
+            "시험의 흡광 기반 계산치는 완제품의 표시 SPF/UVA 성능이 아니며 실제 제품 조건 미확인"
+          ],
+          "cite": "Ginzburg et al. 2021",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8550398/"
+        }
+      ]
     },
     {
       "id": "ethylhexyl_triazone",
@@ -912,7 +1479,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "octocrylene",
@@ -934,7 +1502,76 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8349,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            }
+          ],
+          "summary": "아보벤존과 옥토크릴렌의 혼합 용액을 자외선에 노출한 비인체 시험에서, 흡광도 변화는 용매와 평가 방식에 따라 달랐습니다. 두 성분이 함께 들어 있다는 사실만으로 완제품의 광안정성이 좋아진다고 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존:옥토크릴렌 1:3 몰비, 에탄올 또는 아세토니트릴 용액 대 아보벤존 단독",
+            "마이크로몰 농도 범위, 초기 흡광도 0.6–0.8로 조절; 2 mL·광경로 10 mm 석영 큐벳",
+            "AM1.5G 모의태양광 100 mW/cm²; 최대 2시간 관찰, 표1–2는 시간당 최대 흡광 및 UVA 면적 변화"
+          ],
+          "limitations": [
+            "에탄올에서는 뚜렷한 안정화 차이를 확인하지 못함; 아세토니트릴에서는 UVA 면적 감소가 덜했지만 최대 흡광점 차이는 작았음",
+            "정확한 각 시험 농도·pH·아세토니트릴 독립 반복 수·군간 검정은 미기재; 에탄올은 3회 평균",
+            "스펙트럼 중첩·광차폐와 직접 안정화 기전을 분리하지 못함",
+            "보충자료 일부 서술·표 번호가 본문과 불일치하여 본문 표1–2와 그림S8–S9 기준으로 대조",
+            "새로 합성한 공유결합 화합물의 결과를 두 성분 혼합 결과에 포함하지 않음",
+            "희석 용액 실험이며 실제 제품 농도·기제·SPF·피부 안전성·별도 제품 병용 조건 미확인"
+          ],
+          "cite": "Cowden et al. 2023",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10245224/"
+        },
+        {
+          "edge_id": 8350,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "zinc_oxide",
+              "name_kr": "징크옥사이드",
+              "has_page": true
+            },
+            {
+              "id": "ethylhexyl_salicylate",
+              "name_kr": "에칠헥실살리실레이트",
+              "has_page": true
+            },
+            {
+              "id": "homosalate",
+              "name_kr": "호모살레이트",
+              "has_page": true
+            }
+          ],
+          "summary": "네 종류 유기 자외선필터 혼합물에 코팅하지 않은 징크옥사이드를 넣은 비인체 시험에서, 광조사 뒤 UVA 흡광이 더 크게 감소했습니다. 실험용 용매에서 얻은 결과로 완제품의 차단력이나 사람의 안전성을 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존 1.8%·에칠헥실살리실레이트 4%·호모살레이트 7%·옥토크릴렌 5%의 DMSO 혼합물",
+            "혼합물1에 무코팅 징크옥사이드 6% 첨가 대 무첨가; 200–1000 nm 입자와 평균85 nm(<100 nm) 입자를 별도 시험",
+            "3 µL 시료, AM1.5G 모의태양광 104 mW/cm²·120분, 암소 대조; 희석 후 UV–Vis 측정"
+          ],
+          "limitations": [
+            "4종 유기 필터와 입자의 전체 배합 결과이며 아보벤존·징크옥사이드 두 성분만의 시험으로 축약 불가",
+            "실험용 DMSO 용액·현탁액 조건이며 완제품 크림이나 실제 도포 조건이 아님",
+            "코팅된 입자·다른 배합·별도 제품 병용·인체 피부 안전성은 미검증",
+            "흡광도 3회 측정의 변동은 보고됐으나 독립 제조 배치 수·이 광학 비교의 군간 통계는 미기재",
+            "논문 내 제브라피시 독성 결과를 사람의 위해성·사용 금지로 확대하지 않음",
+            "시험의 흡광 기반 계산치는 완제품의 표시 SPF/UVA 성능이 아니며 실제 제품 조건 미확인"
+          ],
+          "cite": "Ginzburg et al. 2021",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8550398/"
+        }
+      ]
     },
     {
       "id": "urea",
@@ -956,7 +1593,33 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8330,
+          "partners": [
+            {
+              "id": "glycerin",
+              "name_kr": "글리세린",
+              "has_page": true
+            }
+          ],
+          "summary": "글리세린과 우레아를 함께 넣은 수용액의 단기 수분 변화를 한 사람에게 반복 측정한 연구가 있습니다. 이 결과만으로 일반적인 보습 시너지나 별도 제품을 겹쳐 바르는 효과를 판단하기는 어렵습니다.",
+          "study_conditions": [
+            "글리세린 5 wt% + 우레아 5 wt% 수용액",
+            "한 사람의 왼쪽 전완, 날짜를 바꿔 12회 반복",
+            "23°C·50% RH, 30 µL 도포, 3–120분 정전용량 측정"
+          ],
+          "limitations": [
+            "독립 표본은 1명이며 반복 측정을 12명으로 계산하지 않음",
+            "특정 수용액 결과이며 제품 레이어링·임상 안전성·장기 효과·순서·대기시간은 확인하지 않음",
+            "실제 제품의 농도·제형 일치 미확인",
+            "혼합군 총농도 10 wt%와 글리세린 5 wt% 비교는 총농도가 같지 않으며, 두 성분의 상호작용 자체를 분리해 입증하지 않음"
+          ],
+          "cite": "Nonobe, Maeda & Murashima 2023",
+          "url": "https://www.jstage.jst.go.jp/article/sccj/57/4/57_343/_pdf"
+        }
+      ]
     },
     {
       "id": "licorice_extract",
@@ -978,7 +1641,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "isoamyl_p_methoxycinnamate",
@@ -1000,7 +1664,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "zinc_oxide",
@@ -1022,7 +1687,50 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8350,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "ethylhexyl_salicylate",
+              "name_kr": "에칠헥실살리실레이트",
+              "has_page": true
+            },
+            {
+              "id": "homosalate",
+              "name_kr": "호모살레이트",
+              "has_page": true
+            },
+            {
+              "id": "octocrylene",
+              "name_kr": "옥토크릴렌",
+              "has_page": true
+            }
+          ],
+          "summary": "네 종류 유기 자외선필터 혼합물에 코팅하지 않은 징크옥사이드를 넣은 비인체 시험에서, 광조사 뒤 UVA 흡광이 더 크게 감소했습니다. 실험용 용매에서 얻은 결과로 완제품의 차단력이나 사람의 안전성을 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존 1.8%·에칠헥실살리실레이트 4%·호모살레이트 7%·옥토크릴렌 5%의 DMSO 혼합물",
+            "혼합물1에 무코팅 징크옥사이드 6% 첨가 대 무첨가; 200–1000 nm 입자와 평균85 nm(<100 nm) 입자를 별도 시험",
+            "3 µL 시료, AM1.5G 모의태양광 104 mW/cm²·120분, 암소 대조; 희석 후 UV–Vis 측정"
+          ],
+          "limitations": [
+            "4종 유기 필터와 입자의 전체 배합 결과이며 아보벤존·징크옥사이드 두 성분만의 시험으로 축약 불가",
+            "실험용 DMSO 용액·현탁액 조건이며 완제품 크림이나 실제 도포 조건이 아님",
+            "코팅된 입자·다른 배합·별도 제품 병용·인체 피부 안전성은 미검증",
+            "흡광도 3회 측정의 변동은 보고됐으나 독립 제조 배치 수·이 광학 비교의 군간 통계는 미기재",
+            "논문 내 제브라피시 독성 결과를 사람의 위해성·사용 금지로 확대하지 않음",
+            "시험의 흡광 기반 계산치는 완제품의 표시 SPF/UVA 성능이 아니며 실제 제품 조건 미확인"
+          ],
+          "cite": "Ginzburg et al. 2021",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8550398/"
+        }
+      ]
     },
     {
       "id": "caffeine",
@@ -1066,6 +1774,42 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/32304",
           "source_as_of": null
         }
+      ],
+      "references": [
+        {
+          "edge_id": 8340,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "ehmc",
+              "name_kr": "에칠헥실메톡시신나메이트",
+              "has_page": true
+            },
+            {
+              "id": "titanium_dioxide",
+              "name_kr": "티타늄디옥사이드",
+              "has_page": true
+            }
+          ],
+          "summary": "세 종류 자외선필터를 넣은 시험 제형에 카페인을 추가했을 때, 소규모 인체 시험의 SPF 측정값이 높게 관찰됐습니다. 다른 제품의 SPF 상승이나 카페인 자체의 자외선 차단 효과를 보장하지 않습니다.",
+          "study_conditions": [
+            "동일 O/W 유화 제형에 카페인 0% 대 2.5% 비교",
+            "에칠헥실메톡시신나메이트 7.5% + 부틸메톡시디벤조일메탄 3% + 티타늄디옥사이드 5% 공통",
+            "SPF 시험 성인 10명·피부형 II/III·2 mg/cm²; 별도 피부 적합성 시험은 12명"
+          ],
+          "limitations": [
+            "필터 3종을 모두 포함한 특정 배합 연구; 각 필터와 카페인의 두 성분 관계로 분할 불가",
+            "Table 3의 대조 SPF 15.49와 본문 15.43 표기가 달라 상승률을 표시하지 않음",
+            "작은 단기 시험이며 광독성 추가 평가가 필요하다고 원문 명시",
+            "실제 제품 배합·SPF·장기 안전성 미확인; 제품에 섞거나 덧발라 SPF를 높이는 사용법 아님"
+          ],
+          "cite": "Rosado et al. 2019",
+          "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00519/full"
+        }
       ]
     },
     {
@@ -1088,7 +1832,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "trehalose",
@@ -1110,7 +1855,8 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "titanium_dioxide",
@@ -1132,7 +1878,43 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8340,
+          "partners": [
+            {
+              "id": "caffeine",
+              "name_kr": "카페인",
+              "has_page": true
+            },
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "ehmc",
+              "name_kr": "에칠헥실메톡시신나메이트",
+              "has_page": true
+            }
+          ],
+          "summary": "세 종류 자외선필터를 넣은 시험 제형에 카페인을 추가했을 때, 소규모 인체 시험의 SPF 측정값이 높게 관찰됐습니다. 다른 제품의 SPF 상승이나 카페인 자체의 자외선 차단 효과를 보장하지 않습니다.",
+          "study_conditions": [
+            "동일 O/W 유화 제형에 카페인 0% 대 2.5% 비교",
+            "에칠헥실메톡시신나메이트 7.5% + 부틸메톡시디벤조일메탄 3% + 티타늄디옥사이드 5% 공통",
+            "SPF 시험 성인 10명·피부형 II/III·2 mg/cm²; 별도 피부 적합성 시험은 12명"
+          ],
+          "limitations": [
+            "필터 3종을 모두 포함한 특정 배합 연구; 각 필터와 카페인의 두 성분 관계로 분할 불가",
+            "Table 3의 대조 SPF 15.49와 본문 15.43 표기가 달라 상승률을 표시하지 않음",
+            "작은 단기 시험이며 광독성 추가 평가가 필요하다고 원문 명시",
+            "실제 제품 배합·SPF·장기 안전성 미확인; 제품에 섞거나 덧발라 SPF를 높이는 사용법 아님"
+          ],
+          "cite": "Rosado et al. 2019",
+          "url": "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2019.00519/full"
+        }
+      ]
     },
     {
       "id": "panthenol",
@@ -1154,7 +1936,34 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8347,
+          "partners": [
+            {
+              "id": "retinol",
+              "name_kr": "레티놀",
+              "has_page": true
+            }
+          ],
+          "summary": "레티놀에 판테놀을 넣은 세럼의 소규모 패치 시험에서, 레티놀 세럼만 사용한 대조 조건보다 홍반 기반 자극 지표가 낮게 관찰됐습니다. 특정 농도와 시험 조건에 한정된 결과입니다.",
+          "study_conditions": [
+            "중국 건강한 성인 21명(21–35세), 무작위 이중눈가림 기제 대조 패치 시험",
+            "레티놀 0.1% 세럼을 공통 기제로 각 첨가 성분을 개별 시험",
+            "첫 패치 48시간·둘째 72시간 후 제거; 각각 2회·4회 홍반 관찰, CEA 기반 MCII 평가",
+            "레티놀 0.1% + 판테놀 2% 대 레티놀 0.1% 기제"
+          ],
+          "limitations": [
+            "소규모 단기 패치 시험으로 일상 장기 사용·다른 레티노이드·별도 제품 병용에 일반화 불가",
+            "첨가 성분 단독군이 없어 임상 시너지 판단 불가",
+            "전체 기제·pH·독립 검정 방법·다중비교 보정은 본문에 미기재",
+            "실제 제품의 농도·기제·시험 조건 미확인; 안전성 보장·사용 농도 권고 아님"
+          ],
+          "cite": "Ye et al. 2025",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12494960/"
+        }
+      ]
     },
     {
       "id": "phenylbenzimidazole_sulfonic_acid",
@@ -1176,7 +1985,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "petrolatum",
@@ -1198,7 +2008,8 @@
           "condition_label": null
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "polysilicone_15",
@@ -1220,7 +2031,8 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "peg_retinamide",
@@ -1242,7 +2054,8 @@
           "condition_label": "고시 함량"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": []
     },
     {
       "id": "propanediol",
@@ -1279,7 +2092,8 @@
           "source_url": "https://ec.europa.eu/growth/tools-databases/cosing/details/58392",
           "source_as_of": null
         }
-      ]
+      ],
+      "references": []
     },
     {
       "id": "homosalate",
@@ -1301,7 +2115,50 @@
           "condition_label": "최대 배합 한도"
         }
       ],
-      "functions": []
+      "functions": [],
+      "references": [
+        {
+          "edge_id": 8350,
+          "partners": [
+            {
+              "id": "bmdbm",
+              "name_kr": "부틸메톡시디벤조일메탄",
+              "has_page": true
+            },
+            {
+              "id": "zinc_oxide",
+              "name_kr": "징크옥사이드",
+              "has_page": true
+            },
+            {
+              "id": "ethylhexyl_salicylate",
+              "name_kr": "에칠헥실살리실레이트",
+              "has_page": true
+            },
+            {
+              "id": "octocrylene",
+              "name_kr": "옥토크릴렌",
+              "has_page": true
+            }
+          ],
+          "summary": "네 종류 유기 자외선필터 혼합물에 코팅하지 않은 징크옥사이드를 넣은 비인체 시험에서, 광조사 뒤 UVA 흡광이 더 크게 감소했습니다. 실험용 용매에서 얻은 결과로 완제품의 차단력이나 사람의 안전성을 판단할 수 없습니다.",
+          "study_conditions": [
+            "아보벤존 1.8%·에칠헥실살리실레이트 4%·호모살레이트 7%·옥토크릴렌 5%의 DMSO 혼합물",
+            "혼합물1에 무코팅 징크옥사이드 6% 첨가 대 무첨가; 200–1000 nm 입자와 평균85 nm(<100 nm) 입자를 별도 시험",
+            "3 µL 시료, AM1.5G 모의태양광 104 mW/cm²·120분, 암소 대조; 희석 후 UV–Vis 측정"
+          ],
+          "limitations": [
+            "4종 유기 필터와 입자의 전체 배합 결과이며 아보벤존·징크옥사이드 두 성분만의 시험으로 축약 불가",
+            "실험용 DMSO 용액·현탁액 조건이며 완제품 크림이나 실제 도포 조건이 아님",
+            "코팅된 입자·다른 배합·별도 제품 병용·인체 피부 안전성은 미검증",
+            "흡광도 3회 측정의 변동은 보고됐으나 독립 제조 배치 수·이 광학 비교의 군간 통계는 미기재",
+            "논문 내 제브라피시 독성 결과를 사람의 위해성·사용 금지로 확대하지 않음",
+            "시험의 흡광 기반 계산치는 완제품의 표시 SPF/UVA 성능이 아니며 실제 제품 조건 미확인"
+          ],
+          "cite": "Ginzburg et al. 2021",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8550398/"
+        }
+      ]
     }
   ]
 }

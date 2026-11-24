@@ -22,6 +22,14 @@ layout: blog
   </section>
   {% endif %}
 
+  {% if ingredient.references.size > 0 %}
+  <section aria-labelledby="references-title">
+    <h2 id="references-title">다른 성분과 함께 다룬 연구</h2>
+    <p class="blog-note">이 성분을 다른 성분과 함께 넣은 특정 제형을 다룬 연구입니다. 함께 쓰면 효과가 커진다는 뜻이 아니고, 따로 산 제품을 겹쳐 바르라는 권유도 아닙니다. 연구 조건과 한계를 함께 확인하세요.</p>
+    {% for reference in ingredient.references %}{% include blog-reference.html reference=reference %}{% endfor %}
+  </section>
+  {% endif %}
+
   {% if page.linking_posts.size > 0 %}
   <section aria-labelledby="related-title">
     <h2 id="related-title">관련 글</h2>

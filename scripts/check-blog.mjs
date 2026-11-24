@@ -67,6 +67,10 @@ for (const file of pages) {
   if (!html.includes("pt=129394063")) fail(`${rel}: 캠페인 링크 없음`);
   for (const [, ct] of html.matchAll(/[?&]ct=([^&"]+)/g)) if (!CAMPAIGNS.includes(ct)) fail(`${rel}: 허용되지 않은 ct=${ct}`);
   for (const pattern of FORBIDDEN) if (pattern.test(html)) fail(`${rel}: 금지 패턴 ${pattern}`);
+  // 연구 참고 절(DB 문구 그대로)도 질병·치료 맥락 낱말을 싣지 않는다. 스냅숏 생성기가 먼저 거른다.
+  const refs = html.match(/<section aria-labelledby="references-title">([\s\S]*?)<\/section>/);
+  const refWord = refs?.[1].match(/치료|여드름|비듬|기미|환자/);
+  if (refWord) fail(`${rel}: 연구 참고에 금지어 ${refWord[0]}`);
   for (const [, href] of html.matchAll(/href="(\/blog\/[^"#?]*)"/g)) {
     const target = join(site, href, href.endsWith("/") ? "index.html" : "");
     if (!existsSync(target)) fail(`${rel}: 깨진 내부 링크 ${href}`);

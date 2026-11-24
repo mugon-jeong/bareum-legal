@@ -1,0 +1,13 @@
+{% assign ref = include.reference %}
+<article class="claim-card">
+  <header>
+    <h3>{% for p in ref.partners %}{% if p.has_page %}<a href="{{ '/blog/ingredients/' | append: p.id | append: '/' | relative_url }}">{{ p.name_kr }}</a>{% else %}{{ p.name_kr }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}</h3>
+    <span class="claim-source-type">연구 참고</span>
+  </header>
+  <p class="claim-text">{{ ref.summary }}</p>
+  <dl>
+    {% if ref.study_conditions.size > 0 %}<div><dt>연구 조건</dt><dd><ul class="reference-list">{% for c in ref.study_conditions %}<li>{{ c }}</li>{% endfor %}</ul></dd></div>{% endif %}
+    {% if ref.limitations.size > 0 %}<div><dt>한계</dt><dd><ul class="reference-list">{% for l in ref.limitations %}<li>{{ l }}</li>{% endfor %}</ul></dd></div>{% endif %}
+    <div><dt>출처</dt><dd><a href="{{ ref.url | escape }}" target="_blank" rel="noopener">{{ ref.cite }}</a></dd></div>
+  </dl>
+</article>
